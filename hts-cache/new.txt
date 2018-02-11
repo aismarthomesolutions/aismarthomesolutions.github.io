@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-17:12:00	243/243	---M--	301	error ('Moved%20Permanently')	text/html	date:Sun,%2011%20Feb%202018%2001:11:59%20GMT	http://lainfosys.com/robots.txt		(from )
-17:12:01	24091/24091	---M-Z	200	added ('OK')	text/html	date:Sun,%2011%20Feb%202018%2001:11:59%20GMT	http://lainfosys.com/projects/aismarthome/	C:/Users/kuiju/OneDrive/Automated%20Intelligence/Lainsys/Smart%20Home/index-2.html	(from )
