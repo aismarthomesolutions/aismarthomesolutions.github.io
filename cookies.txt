@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-lainfosys.com	TRUE	/	FALSE	1999999999	PHPSESSID	aeee0fb344753062c2eee1c1038b340e
-
