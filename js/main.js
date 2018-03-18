@@ -75,7 +75,7 @@
                 i++;
                 var $this = $(this);
                 g[i] = $this.jcarousel({
-                    animation           : 600,
+                    animation           : 6000,
                     scroll              : scrollCount
                 });
                 $this.jcarousel('scroll', 0);
