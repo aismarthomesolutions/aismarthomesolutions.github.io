@@ -75,7 +75,7 @@
                 i++;
                 var $this = $(this);
                 g[i] = $this.jcarousel({
-                    animation           : 6000,
+                    animation           : 600,
                     scroll              : scrollCount
                 });
                 $this.jcarousel('scroll', 0);
@@ -240,8 +240,8 @@
          /*----------------------------------------------------*/
         window.mySwipe = new Swipe(document.getElementById('slider'), {
             startSlide: 2,
-            speed: 400,
-            auto: 3000,
+            speed: 4000,
+            auto: 30000,
             continuous: true,
             disableScroll: false,
             stopPropagation: false,
@@ -343,12 +343,12 @@ $(document).ready(function() {
         .on('click', '.btntoTop', function() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 700);
+            }, 7000);
         });
 
     $(window)
         .on('scroll', function() {
-            if ($(this).scrollTop() > 200)
+            if ($(this).scrollTop() > 2000)
                 $('.btntoTop').addClass('active');
             else
                 $('.btntoTop').removeClass('active');
