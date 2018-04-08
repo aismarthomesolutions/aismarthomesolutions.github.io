@@ -1,0 +1,937 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Automated Intelligence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/bookingmodal.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="css/usecases.css" rel="stylesheet" type="text/css">
+		<link href="css/ihover.min.css" rel="stylesheet" type="text/css">
+				<link href="css/shortcodes.css" rel="stylesheet" type="text/css">
+						<link href="css/faq.css" rel="stylesheet" type="text/css">
+								<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<link href="css/testimonial.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+
+	</head>
+	<body class="landing">
+	
+	<div class="container" style="margin:0px auto;">
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+</div>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+					<div class="leftnav">	
+					<nav style="float:left; left:0;">
+						<ul id="onepgmenu" class="nav navbar-nav" style="float:left;">
+							<li class="activeonepg"><a class="page-scroll" href="#one">Benefits</a></li>
+							<li><a class="page-scroll" href="#two">Package</a></li>
+							<li><a class="page-scroll" href="#three">Testimonials</a></li>
+							<li><a class="page-scroll" href="login.html">Log in</a></li>
+							
+						</ul>
+					</nav>
+					</div>
+						<div style="float:right;">            
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li class="active"><a href="index.html">Home</a></li>
+											<li><a href="usecases.html">Use Cases</a></li>
+											<li><a href="product.html">Product Integrations</a></li>
+											<li><a href="">Questionnaire</a>
+											
+												    <ul style="padding-left:50px; border:none; margin:10px 0px 13px 0px;">
+														<li style="border:none;"><a href="quantitative.html">Quantitative </a></li>
+														<li style="border:none; padding:0px;"><a href="qualitative.html">Qualitative </a></li>
+														
+													</ul>
+											</li> 
+											<li><a href="warranty_payment.html">Warranty & Payment</a></li>
+											<li><a href="appointment.html">Appointment</a></li>
+											<li><a href="faq.html">FAQ</a></li>
+											<li><a href="contactus.html">About Us/Contact</a></li>
+											<li><a href="thankyou.html">Thank You</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						</div>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+					<div class="row" style="margin:0px auto;">
+							<img src="images/logo.png" class="img-responsive "  width="327px" height="152px" alt="Webgig" />
+							</div>
+						<div class="inner" style="margin:20px 0px 0px 0px;">
+							
+							<h2>Automated Intelligence</h2>
+							<p style="font-size:28px;">Smart Home Solutions</p>
+
+						</div>
+						<!--<a href="#one" class="more scrolly">Learn More</a>-->
+						<a href="#one" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated" style="margin:0 auto;">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special" style="background-image: url(images/pattern.png); background-repeat: repeat-x; padding-top:55px; padding-bottom: 0px;">
+						<div class="inner">
+							<header class="major">
+								<h2 style="color: #F05F40;">Banifit of smart Home</h2>
+								<p style="color:#F05F40;">Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							
+							</header>
+			<div id="tabs" class="tabs">
+				<nav>
+					<ul>
+						<li><a href="#section-1" class="icon ion-ios-alarm"><span>GOOD MORNING</span></a></li>
+						<li><a href="#section-2" class="icon ion-ios-cloudy-night"><span>GOOD BYE</span></a></li>
+						<li><a href="#section-3" class="icon ion-beer"><span>VACATION</span></a></li>
+						<li><a href="#section-4" class="icon ion-film-marker"><span>MOVIE NIGHT</span></a></li>
+						<!--<li><a href="#section-5" class="icon ion-card"><span>Payment</span></a></li>-->
+					</ul>
+				</nav>
+				<div class="content" style="padding-bottom: 0px;">
+					<section id="section-1">
+						<div class="banner1">
+
+
+							<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel" data-slide-to="1"></li>
+									<li data-target="#carousel" data-slide-to="2"></li>
+									<li data-target="#carousel" data-slide-to="3"></li>
+									<li data-target="#carousel" data-slide-to="4"></li>
+									<li data-target="#carousel" data-slide-to="5"></li>
+									<li data-target="#carousel" data-slide-to="6"></li>
+									<li data-target="#carousel" data-slide-to="7"></li>
+									<li data-target="#carousel" data-slide-to="8"></li>
+								</ol>
+								<!-- Carousel items -->
+								<div class="carousel-inner carousel-zoom">
+									<div class="active item headbg1">
+										<div class="col-md-12 bg20">
+											<h2 style="color: #fff;">Every morning, it’s the same thing…</h2>
+										</div>
+										<div class="col-md-4">
+										</div>
+										<div class="col-md-8">
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Every morning, it’s the same thing…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/morning.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">You snooze your alarm 11 times until you’re 30 minutes behind schedule and have no choice but to get up…</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Every morning, it’s the same thing…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/wintersleep.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">…except it’s the middle of the winter and the last thing you want to do is leave the warmth of your blanket.</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Every morning, it’s the same thing…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/thermostat.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">Another 30 minutes go by before you muster the courage to make a dash for the thermostat</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Every morning, it’s the same thing…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/iron.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">Lastly, you plug in the iron and pray it heats up in time for you to avoid a round trip to work on the wrinkle express.</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12 bg20">
+											<h2 style="color: #fff;">Imagine Instead…</h2>
+										</div>
+										<div class="col-md-4">
+										</div>
+										<div class="col-md-8">
+										</div>
+									</div>
+									
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Imagine Instead…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/morning.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">30 minutes before your alarm goes off, the heat comes on so it’s the perfect temperature to ease you out of bed</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Imagine Instead…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/iron.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">15 minutes before your alarm goes off, the iron turns on so its nice and hot when you need it</h3>
+										</div>
+									</div>
+									<div class="item headbg1">
+										<div class="col-md-12">
+											<h2 style="color: #F05F40;">Imagine Instead…</h2>
+										</div>
+										<div class="col-md-4">
+											<img src="images/tune.png" alt="" class="img-responsive imgbgmor">
+										</div>
+										<div class="col-md-8">
+											<h3 style="color: #666;">It’s time to get up and your favorite tunes start playing to get your day going</h3>
+										</div>
+									</div>
+
+								   </div>
+								<!-- Carousel nav -->
+								<!--<a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
+								<a class="carousel-control right" href="#carousel" data-slide="next">›</a>-->
+								
+
+							</div>
+
+							
+						</div>	
+					
+					
+					
+					</section>
+					<section id="section-2">
+												<div id="accordion" class="panel-group accordion"><!-- Accordians -->
+													 <div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+																	
+																	<p style="margin:0px;">Vestibulum turpis lacus</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseSix" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+
+													<div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+																	
+																	<p style="margin:0px;">How to Copy and paste ?</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseSeven" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+												</div>
+					</section>
+					<section id="section-3">
+												<div id="accordion" class="panel-group accordion"><!-- Accordians -->
+													 <div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
+																	
+																	<p style="margin:0px;">How to Copy and paste ?</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseEight" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+
+													<div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
+																	
+																	<p style="margin:0px;">Vestibulum turpis lacus</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseNine" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+												</div>
+					</section>
+					<section id="section-4">
+											<div id="accordion" class="panel-group accordion"><!-- Accordians -->
+													 <div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
+																	
+																	<p style="margin:0px;">Vestibulum turpis lacus</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseTen" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+
+													<div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+																	
+																	<p style="margin:0px;">Vestibulum turpis lacus</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseEleven" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+												</div>
+						
+						
+					</section>
+					<section id="section-5">
+					<div id="accordion" class="panel-group accordion"><!-- Accordians -->
+													 <div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+																	
+																	<p style="margin:0px;">How to Copy and paste ?</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseTwelve" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+
+													<div class="panel panel-default iconBox_3" style="margin-bottom:15px; border-color:#f05f40;">
+														<div class="panel-heading" style="background-color: transparent; padding:0px;">
+															<h4 class="panel-title icon-icon" style="text-decoration:none; ">
+																<a data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+																	
+																	<p style="margin:0px;">Vestibulum turpis lacus</p>
+																</a>
+															</h4>
+														</div>
+														<div id="collapseThirteen" class="panel-collapse collapse">
+															<div class="panel-body" style="color:#555; font-family: Open Sans,Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.</div>
+															
+														</div>
+													</div>
+												</div>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+
+						</div>
+						
+
+						
+						<a href="#two" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated" style="margin:0 auto;">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+						
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 special nice__title" style="background: rgba(0, 0, 0, 0.7); padding-bottom:50px;">
+						<div class="inner" style="padding-bottom:20px;">
+							<header class="major">
+								<h2 style="padding-bottom:0px;">Picking Your Package</h2>
+								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+							</header>
+							<div class="row" style="margin:0px auto;">
+
+							
+									
+<!-- portfolio Modals -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        	<div class="col-md-6 to-animate-2">
+								<h3>Appointment</h3>
+								<div class="form-group ">
+									<label for="name" class="sr-only">Name</label>
+									<input id="name" class="form-control" placeholder="Name" type="text">
+								</div>
+								<div class="form-group ">
+									<label for="email" class="sr-only">Email</label>
+									<input id="email" class="form-control" placeholder="Email" type="email">
+								</div>
+								<div class="form-group">
+									<label for="occation" class="sr-only">Occation</label>
+									<select class="form-control" id="occation">
+										<option>Select a Package</option>
+									  <option>Package One</option>
+									  <option>Package Two</option>
+									  <option>Package Three</option>
+									  <option>Other</option>
+									</select>
+								</div>
+								<div class="form-group ">
+											
+												<label for="dtp_input1" class="control-label"></label>
+												<div class="input-group date form_datetime col-md-12" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1" style="padding:0px;">
+													<input class="form-control" size="16" type="text" value="Date &amp; Time" readonly>
+													<span class="input-group-addon"><span class="glyphicon glyphicon-remove" style="color:#555;"></span></span>
+													<span class="input-group-addon"><span class="glyphicon glyphicon-th" style="color:#555;"></span></span>
+												</div>
+												<input type="hidden" id="dtp_input1" value=""><br/><br/>
+								</div>
+
+
+									
+								<div class="form-group ">
+									<label for="message" class="sr-only">Message</label>
+									<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+								</div>
+								<div class="form-group ">
+									<!--<a class="btn btn-lg btn-block btn-danger button special">Booking Appointment</a>-->
+									<input class="btn btn-lg btn-block btn-danger button special" value="Booking Appointment" type="submit">
+								</div>
+							</div>
+					
+					
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+									
+									
+									<!-- item -->
+									<div class="col-sm-12 col-md-4 text-center">
+										<div class="panel panel-warning panel-pricing">
+											<div class="panel-heading">
+												 <div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
+													<div class="ih-item square effect6 from_top_and_bottom">
+														<a href="#">
+															<div class="img">
+															<img src="images/pic01.jpg" alt="">
+															 </div>
+															 <div class="mask1"></div>
+															 <div class="mask2"></div>
+															 <div class="info">
+																<h3>Heading here</h3>
+																<p>Description goes here</p>
+															 </div>
+														  </a>
+													   </div>
+													</div>
+												<!--<img class="img-responsive img-rounded" style="margin-bottom:0px;" src="images/pic01.jpg" alt="image">-->
+											</div>
+											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Basic</strong></p>
+												
+											</div>
+												<table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
+													<thead>
+													  <tr class="odd">
+														<td class="column1">Products</td>
+														<td scope="col" abbr="Simple">Price</td>
+												  
+													  </tr>
+													</thead>
+													<tfoot>
+
+													</tfoot>
+													<tbody>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">BYD Electronic</th>
+														<td>$300</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Wireless Devices </th>
+														<td>$300</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Semiconductor </th>
+														<td>$350</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Mechatronics </th>
+														<td>$400</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Digital Camera </th>
+														<td>$500</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Copy Machine</th>
+														<td>$600</td>
+													   
+													  </tr>
+													</tbody>
+												  </table>
+ 											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#F05F40;">$1500</strong></p>
+												
+											</div> 
+											<div class="panel-footer">
+												
+												<a class="btn btn-lg btn-default call-modal" href="#">
+													
+													I’ll start with the basics
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- /item -->
+
+									<!-- item -->
+									<div class="col-sm-12 col-md-4 text-center">
+										<div class="panel panel-success panel-pricing">
+											<div class="panel-heading">
+												<div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
+													<div class="ih-item square effect6 from_top_and_bottom">
+														<a href="#">
+															<div class="img">
+															<img src="images/pic01.jpg" alt="">
+															 </div>
+															 <div class="mask1"></div>
+															 <div class="mask2"></div>
+															 <div class="info">
+																<h3>Heading here</h3>
+																<p>Description goes here</p>
+															 </div>
+														  </a>
+													   </div>
+													</div>
+											</div>
+											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Comprehensive</strong></p>
+												
+											</div>
+												<table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
+													<thead>
+													  <tr class="odd">
+														<td class="column1">Products</td>
+														<td scope="col" abbr="Simple">Price</td>
+												  
+													  </tr>
+													</thead>
+													<tfoot>
+
+													</tfoot>
+													<tbody>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">BYD Electronic</th>
+														<td>$300</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Wireless Devices </th>
+														<td>$300</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Semiconductor </th>
+														<td>$350</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Mechatronics </th>
+														<td>$400</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Digital Camera </th>
+														<td>$500</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Copy Machine</th>
+														<td>$600</td>
+													   
+													  </tr>
+													</tbody>
+												  </table>
+ 											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#F05F40;">$3000</strong></p>
+												
+											</div> 
+											<div class="panel-footer">
+												
+												<a class="btn btn-lg btn-default call-modal" href="#">
+													
+													I want it all
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- /item -->
+									<div class="col-sm-12 col-md-4 text-center">
+										<div class="panel panel-success panel-pricing">
+											<div class="panel-heading">
+												<div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
+													<div class="ih-item square effect6 from_top_and_bottom">
+														<a href="#">
+															<div class="img">
+															<img src="images/pic01.jpg" alt="">
+															 </div>
+															 <div class="mask1"></div>
+															 <div class="mask2"></div>
+															 <div class="info">
+																<h3>Heading here</h3>
+																<p>Description goes here</p>
+															 </div>
+														  </a>
+													   </div>
+													</div>
+											</div>
+											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Advance</strong></p>
+												
+											</div>
+												<table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
+													<thead>
+													  <tr class="odd">
+														<td class="column1">Products</td>
+														<td scope="col" abbr="Simple">Price</td>
+												  
+													  </tr>
+													</thead>
+													<tfoot>
+
+													</tfoot>
+													<tbody>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">BYD Electronic</th>
+														<td>$300</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Wireless Devices </th>
+														<td>$300</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Semiconductor </th>
+														<td>$350</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Mechatronics </th>
+														<td>$400</td>
+														
+													  </tr>
+													  <tr>
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Digital Camera </th>
+														<td>$500</td>
+													   
+													  </tr>
+													  <tr class="odd">
+														<th scope="row" class="column1"><input type="checkbox"  id="brand" value="" style="margin-right: 15px;">Copy Machine</th>
+														<td>$600</td>
+													   
+													  </tr>
+													</tbody>
+												  </table>
+ 											<div class="panel-body text-center">
+												<p style="margin:0px; font-size:30px;"><strong style="color:#F05F40;">$5000</strong></p>
+												
+											</div> 
+											<div class="panel-footer">
+												
+												<a class="btn btn-lg btn-default call-modal" href="#">
+													
+													I want it all
+												</a>
+											</div>
+										</div>
+									</div>
+								
+								<p class="text-center" style="margin:0px; padding:0px;"><strong>NOTE:</strong> Cras iaculis ultricies nulla. Donec fringilla vitae ligula vitae facilisis. Vivamus consectetur tincidunt lorem a bibendum. Sed fermentum ac ante sit nec amet convallis suspendisse potenti suspendisse mollis.</p>
+							</div>
+								
+								
+							
+
+						</div>
+						
+							<div style="margin-bottom:35px;"><a class="btn btn-lg btn-block btn-success page-scroll button special" style="width:20%;" href="#">Questionnaire</a></div>
+							<a href="#three" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated" style="margin:0 auto;">
+                            <i class="fa fa-angle-double-down animated"></i>
+							</a>
+						
+					</section>
+					
+
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special" style="padding-top:55px; background-image: url(images/pattern2.png); background-repeat: repeat-x;">
+						<div class="inner">
+							<header class="major" style="margin-bottom:0px;">
+								<h2>Testimonials</h2>
+								<p style="margin-bottom:10px;">Customers means they are a part of my makeup family.without their help and support nothing is possible.Their compliments give me inspiration and their suggesstions help me to do more good work.</p>
+							</header>
+
+									  <div class="row">
+										<div class="col-md-12">
+										  <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+										  
+									<!-- Bottom Carousel Indicators -->
+									<ol class="carousel-indicators">
+									  <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+									  <li data-target="#quote-carousel" data-slide-to="1"></li>
+									  <li data-target="#quote-carousel" data-slide-to="2"></li>
+									</ol>
+											
+									<!-- Carousel Slides / Quotes -->
+									<div class="carousel-inner">
+
+									<!-- Quote 1 -->
+									<div class="item active">
+									  <div class="row">
+										<div class="col-sm-12">
+										
+										<img class="img-circle" src="images/pack1.jpg" style="width:150px;height:150px;">
+										
+										  <p style="color:#fff;">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+										  
+										  <small><strong>Vulputate M., Dolor</strong></small>
+										</div>
+									  </div>
+									</div>
+
+									<!-- Quote 2 -->
+									<div class="item">
+									  <div class="row">
+										<div class="col-sm-12">
+										<img class="img-circle" src="images/pack2.jpg" style="width:150px;height:150px;">
+										  <p style="color:#fff;">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+										  
+										  <small><strong>Fringilla A., Vulputate Sit</strong></small>
+										</div>
+									  </div>
+									</div>
+
+									<!-- Quote 3 -->
+									<div class="item">
+									  <div class="row">
+										<div class="col-sm-12">
+										<img class="img-circle" src="images/pack3.jpg" style="width:150px;height:150px;">
+										  <p style="color:#fff;">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus.&rdquo;</p>
+										  
+										  <small><strong>Aenean A., Justo Cras</strong></small>
+										</div>
+									  </div>
+									</div>
+									  
+									</div>
+											
+
+										  </div>                          
+										</div>
+									  </div>
+
+
+						</div>
+					</section>
+					
+					
+	<section class="promo_box wow bounceInUp" data-wow-offset="50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <div class="promo_content">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum dolor sit amet, cons adipiscing elit. Aenean commodo ligula eget dolor. </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="pb_action">
+                        <a class="btn btn-lg btn-default call-modal" href="#portfolioModal1" data-toggle="modal">
+                            <i class="fa fa-mobile"></i>
+                            Appointment Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+					
+					
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons" >
+							<li><a href="#" class="icon fa-twitter"  style="font-size:20px;"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook" style="font-size:20px;"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram" style="font-size:20px;"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble" style="font-size:20px;"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o" style="font-size:20px;"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>© 2017 Copyright aismarthome | All Right Reserved</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+			
+				    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+   
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+	
+	<!-- Bootstrap DateTimePicker -->
+	<script src="js/moment.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+	
+	
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+		
+		
+	<script type="text/javascript">
+    $('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1
+    });
+
+</script>
+
+
+	<script>
+$(window).on('load', function() { // makes sure the whole site is loaded 
+  $('#status').fadeOut(); // will first fade out the loading animation 
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $('body').delay(350).css({'overflow':'visible'});
+})
+</script>
+<script>
+$(document).ready(function() {
+  //carousel options
+  $('#quote-carousel').carousel({
+    pause: true, interval: 10000,
+  });
+});
+</script>
+
+
+
+<script src="js/modal.js"></script><!-- JS for Modal -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="js/jquery.flexisel.js"></script>
+          
+	</body>
+</html>
