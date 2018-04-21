@@ -2745,6 +2745,11 @@
     content: "\f2b4"
 }
 
+.fa-thermometer:before {
+    content: "\f491"
+}
+
+
 .sr-only {
     position: absolute;
     width: 1px;
