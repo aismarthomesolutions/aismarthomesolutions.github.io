@@ -652,7 +652,7 @@ button.btn-primary:focus, .btn-default:focus, .btn-info:focus {
 	text-align:center;
 	border-right:none;
 	background-color:#fff;
-	
+	height: 400px;
 }
 .agileits_services_grid span{
 	color:#F05F40;
