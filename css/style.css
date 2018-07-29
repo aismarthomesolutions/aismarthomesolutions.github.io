@@ -652,7 +652,6 @@ button.btn-primary:focus, .btn-default:focus, .btn-info:focus {
 	text-align:center;
 	border-right:none;
 	background-color:#fff;
-    height: 400px;
 }
 .agileits_services_grid span{
 	color:#F05F40;
@@ -803,3 +802,38 @@ color: #777;
     cursor: default;
 }
 /*-- //services --*/
+@media(min-width:480px) {
+    .agileits_services_grid{
+        height: 300px;
+    }
+}
+
+@media(min-width:600px) {
+    .agileits_services_grid{
+        height: 250px;
+    }
+}
+
+@media(min-width:640px) {
+    .agileits_services_grid{
+        height: 330px;
+    }
+}
+
+@media(min-width:768px) {
+    .agileits_services_grid{
+        height: 400px;
+    }
+}
+
+@media(min-width:880px) {
+    .agileits_services_grid{
+        height: 370px;
+    }
+}
+
+@media(min-width:990px) {
+    .agileits_services_grid{
+        height: 310px;
+    }
+}
