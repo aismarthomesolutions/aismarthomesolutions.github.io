@@ -52,6 +52,10 @@
         .swiper-slide .row > :nth-child(2) {
             left: 1% !important;
         }
+
+        td {
+            vertical-align: middle !important;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script src="maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
@@ -457,499 +461,554 @@
     </section>
 
 
-<!-- How Does It Work -->
-<section id="how" class="wrapper special"
-         style="padding-top:55px; background-image: url(images/pattern.png); background-repeat: repeat-x;">
-    <!-- Original: <section id="how" class="wrapper style3 special nice__title" style="background: rgba(0, 0, 0, 0.7); padding:30px;"> -->
-    <div class="inner" style="padding-bottom:1px;">
-        <header class="major">
-            <h2 style="padding-bottom:0px;">How does it work?</h2>
+    <!-- How Does It Work -->
+    <section id="how" class="wrapper special"
+             style="padding-top:55px; background-image: url(images/pattern.png); background-repeat: repeat-x;">
+        <!-- Original: <section id="how" class="wrapper style3 special nice__title" style="background: rgba(0, 0, 0, 0.7); padding:30px;"> -->
+        <div class="inner" style="padding-bottom:1px;">
+            <header class="major">
+                <h2 style="padding-bottom:0px;">How does it work?</h2>
 
 
-            <div class="item">
-                <div class="row">
+                <div class="item">
+                    <div class="row">
 
-                    <div class="col-md-6">
+                        <div class="col-md-6">
 
-                        <p style="color:#fff; margin-bottom:0px;"><strong>TELL US ABOUT YOUR HOME</strong></p>
+                            <p style="color:#fff; margin-bottom:0px;"><strong>TELL US ABOUT YOUR HOME</strong></p>
 
-                        <p style="color:#fff;">We don't believe in one-size-fits-all so unfortunately there's no generic
-                            package you can purchase right away.</p>
-                        <p style="color:#fff; font-size:14px;">(Those two light bulbs and three sensors might work for a
-                            studio apartment but probably won't be enough for a 3,000 sq. ft home.)</p>
+                            <p style="color:#fff;">We don't believe in one-size-fits-all so unfortunately there's no
+                                generic
+                                package you can purchase right away.</p>
+                            <p style="color:#fff; font-size:14px;">(Those two light bulbs and three sensors might work
+                                for a
+                                studio apartment but probably won't be enough for a 3,000 sq. ft home.)</p>
 
-                    </div>
-
-
-                    <div class="col-md-6">
-                        <p style="color:#fff; margin-bottom:0px;"><strong>TELL US YOUR ROUTINES</strong></p>
-                        <p style="color:#fff;">Just like your home, your life is unique and specific to you. We won't
-                            just install all the pieces and leave you to figure out the rest; we'll configure everything
-                            based on your lifestyle.</P>
-                        <p style="color:#fff; font-size:14px;"> And if life changes? We'll make sure your home adapts
-                            accordingly
-                        </p>
-
-                    </div>
-                </div>
-            </div>
+                        </div>
 
 
-            <h3>That's All.</h3>
+                        <div class="col-md-6">
+                            <p style="color:#fff; margin-bottom:0px;"><strong>TELL US YOUR ROUTINES</strong></p>
+                            <p style="color:#fff;">Just like your home, your life is unique and specific to you. We
+                                won't
+                                just install all the pieces and leave you to figure out the rest; we'll configure
+                                everything
+                                based on your lifestyle.</P>
+                            <p style="color:#fff; font-size:14px;"> And if life changes? We'll make sure your home
+                                adapts
+                                accordingly
+                            </p>
 
-            <p style="color:#fff;">
-                Tell us what you already know. Tell us what you want. <br/> We'll take care of the rest.
-            </p>
-
-
-            <p style="color:#fff; margin-bottom:0px;">
-                <i class="fa fa-check"> No reading product reviews.</i></p>
-
-            <p style="color:#fff; margin-bottom:0px;">
-                <i class="fa fa-check"></i> No worrying if everything will work together.</i>
-            </p>
-
-            <p style="color:#fff; margin-bottom:0px;">
-                All the smartness without any of the headaches.</p>
-        </header>
-
-</section>
-
-<!-- Two -->
-<section id="two" class="wrapper style3 special nice__title"
-         style="background: rgba(0, 0, 0, 0.7); padding-bottom:50px;">
-    <div class="inner" style="padding-bottom:20px;">
-        <header class="major">
-            <h2 style="padding-bottom:0px;">Picking Your Package</h2>
-            <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br/> fringilla tincidunt.
-                Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-        </header>
-        <div class="row" style="margin:0px auto;">
-
-
-            <!-- portfolio Modals -->
-            <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
-                 aria-hidden="true">
-                <div class="modal-content port-modal">
-                    <div class="close-modal" data-dismiss="modal">
-                        <div class="lr">
-                            <div class="rl"></div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8 col-lg-offset-2 text-center">
-                                <div class="modal-body">
-                                    <div class="col-md-6 to-animate-2">
-                                        <h3>Appointment</h3>
-                                        <div class="form-group ">
-                                            <label for="name" class="sr-only">Name</label>
-                                            <input id="name" class="form-control" placeholder="Name" type="text">
-                                        </div>
-                                        <div class="form-group ">
-                                            <label for="email" class="sr-only">Email</label>
-                                            <input id="email" class="form-control" placeholder="Email" type="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="occation" class="sr-only">Occation</label>
-                                            <select class="form-control" id="occation">
-                                                <option>Select a Package</option>
-                                                <option>Package One</option>
-                                                <option>Package Two</option>
-                                                <option>Package Three</option>
-                                                <option>Other</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group ">
+                </div>
 
-                                            <label for="dtp_input1" class="control-label"></label>
-                                            <div class="input-group date form_datetime col-md-12"
-                                                 data-date="1979-09-16T05:25:07Z"
-                                                 data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1"
-                                                 style="padding:0px;">
-                                                <input class="form-control" size="16" type="text"
-                                                       value="Date &amp; Time" readonly>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-remove"
-                                                                                      style="color:#555;"></span></span>
-                                                <span class="input-group-addon"><span class="glyphicon glyphicon-th"
-                                                                                      style="color:#555;"></span></span>
+
+                <h3>That's All.</h3>
+
+                <p style="color:#fff;">
+                    Tell us what you already know. Tell us what you want. <br/> We'll take care of the rest.
+                </p>
+
+
+                <p style="color:#fff; margin-bottom:0px;">
+                    <i class="fa fa-check"> No reading product reviews.</i></p>
+
+                <p style="color:#fff; margin-bottom:0px;">
+                    <i class="fa fa-check"></i> No worrying if everything will work together.</i>
+                </p>
+
+                <p style="color:#fff; margin-bottom:0px;">
+                    All the smartness without any of the headaches.</p>
+            </header>
+
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style3 special nice__title"
+             style="background: rgba(0, 0, 0, 0.7); padding-bottom:50px;">
+        <div class="inner" style="padding-bottom:20px;">
+            <header class="major">
+                <h2 style="padding-bottom:0px;">Picking Your Package</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br/> fringilla tincidunt.
+                    Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+            </header>
+            <div class="row" style="margin:0px auto;">
+
+
+                <!-- portfolio Modals -->
+                <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
+                     aria-hidden="true">
+                    <div class="modal-content port-modal">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <div class="modal-body">
+                                        <div class="col-md-6 to-animate-2">
+                                            <h3>Appointment</h3>
+                                            <div class="form-group ">
+                                                <label for="name" class="sr-only">Name</label>
+                                                <input id="name" class="form-control" placeholder="Name" type="text">
                                             </div>
-                                            <input type="hidden" id="dtp_input1" value=""><br/><br/>
+                                            <div class="form-group ">
+                                                <label for="email" class="sr-only">Email</label>
+                                                <input id="email" class="form-control" placeholder="Email" type="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="occation" class="sr-only">Occation</label>
+                                                <select class="form-control" id="occation">
+                                                    <option>Select a Package</option>
+                                                    <option>Package One</option>
+                                                    <option>Package Two</option>
+                                                    <option>Package Three</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ">
+
+                                                <label for="dtp_input1" class="control-label"></label>
+                                                <div class="input-group date form_datetime col-md-12"
+                                                     data-date="1979-09-16T05:25:07Z"
+                                                     data-date-format="dd MM yyyy - HH:ii p"
+                                                     data-link-field="dtp_input1"
+                                                     style="padding:0px;">
+                                                    <input class="form-control" size="16" type="text"
+                                                           value="Date &amp; Time" readonly>
+                                                    <span class="input-group-addon"><span
+                                                            class="glyphicon glyphicon-remove"
+                                                            style="color:#555;"></span></span>
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"
+                                                                                          style="color:#555;"></span></span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input1" value=""><br/><br/>
+                                            </div>
+
+
+                                            <div class="form-group ">
+                                                <label for="message" class="sr-only">Message</label>
+                                                <textarea name="" id="message" cols="30" rows="5" class="form-control"
+                                                          placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="form-group ">
+                                                <!--<a class="btn btn-lg btn-block btn-danger button special">Booking Appointment</a>-->
+                                                <input class="btn btn-lg btn-block btn-danger button special"
+                                                       value="Booking Appointment" type="submit">
+                                            </div>
                                         </div>
 
 
-                                        <div class="form-group ">
-                                            <label for="message" class="sr-only">Message</label>
-                                            <textarea name="" id="message" cols="30" rows="5" class="form-control"
-                                                      placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+                <!-- item -->
+                <div class="col-sm-12 col-md-8 text-center">
+                    <div class="panel panel-warning panel-pricing">
+                        <div class="panel-heading">
+                            <div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
+                                <div class="ih-item square effect6 from_top_and_bottom">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="images/pic01.jpg" alt="">
                                         </div>
-                                        <div class="form-group ">
-                                            <!--<a class="btn btn-lg btn-block btn-danger button special">Booking Appointment</a>-->
-                                            <input class="btn btn-lg btn-block btn-danger button special"
-                                                   value="Booking Appointment" type="submit">
+                                        <div class="mask1"></div>
+                                        <div class="mask2"></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<img class="img-responsive img-rounded" style="margin-bottom:0px;" src="images/pic01.jpg" alt="image">-->
+                        </div>
+                        <div class="panel-body text-center">
+
+                            <div id="panel-body" class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-primary active" value="1">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Remote
+                                    Only
+
+                                </label>
+                                <label class="btn btn-primary" value="2">
+                                    <input type="radio" name="options" id="option2" autocomplete="off">Basic
+
+                                </label>
+                                <label class="btn btn-primary" value="3">
+                                    <input type="radio" name="options" id="option3" autocomplete="off">Premium
+
+                                </label>
+                            </div>
+                            <!--<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Basic</strong></p>-->
+
+                        </div>
+                        <table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
+                            <thead>
+                            <tr class="odd">
+                                <td class="column1">Products</td>
+                                <td scope="col" abbr="Simple">Qty</td>
+
+                            </tr>
+                            </thead>
+                            <tfoot>
+
+                            </tfoot>
+                            <tbody>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Floors</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="floors" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
                                         </div>
                                     </div>
+                                </td>
 
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Living Rooms / Common
+                                    Areas/th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="living" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
 
-                                </div>
-                            </div>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kitchen
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="kitchen" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms (Bedroom, Office,
+                                    etc.)
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="rooms" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bathrooms
+
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="bathrooms" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <thead>
+                            <tr class="odd">
+
+                            </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Light Switches</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="light" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lamps</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="lamps" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doors</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="doors" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deadbolts</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="deadbolts" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="windows" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; People in Home</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="people" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TV</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="tv" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Speaker Sets</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="speaker" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thermostat</br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    HVAC Units
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="thermostat" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <thead>
+                            <tr class="odd">
+
+                            </tr>
+                            </thead>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frequently Used </br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Small Appliances
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="frequently" class="entry value">0</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Approximate Sq. Ft</th>
+                                <td>
+                                    <div class="quantity">
+                                        <input id="sq"
+                                               class="form-control"
+                                               onkeyup="var v=this.value||'';v=v.replace(/\D/gi,'');v=parseInt(v,10);if(v<1){this.value=1;}else if(v>10000){this.value=10000;}"
+                                               onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                                               placeholder="1 ~ 10,000"
+                                               style="text-align:center;">
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-body text-center">
+                            <p style="margin:0px; font-size:30px;"><strong id="sum"
+                                                                           style="color:#F05F40;">$???</strong></p>
+
+                        </div>
+                        <div class="panel-footer">
+
+                            <a class="btn btn-lg btn-default call-modal" href="#">
+
+                                I’ll start with the basics
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!--quantity-->
+                <script>
+                    $('.value-plus').on('click', function () {
+                        var divUpd = $(this).parent().find('.value'),
+                            newVal = parseInt(divUpd.text(), 10) + 1;
+                        divUpd.text(newVal);
+                    });
+
+                    $('.value-minus').on('click', function () {
+                        var divUpd = $(this).parent().find('.value'),
+                            newVal = parseInt(divUpd.text(), 10) - 1;
+                        if (newVal >= 0) divUpd.text(newVal);
+                    });
+                </script>
+                <!--quantity-->
+                <p class="text-center" style="margin:0px; padding:0px;"><strong>NOTE:</strong> Cras iaculis ultricies
+                    nulla.
+                    Donec fringilla vitae ligula vitae facilisis. Vivamus consectetur tincidunt lorem a bibendum. Sed
+                    fermentum ac ante sit nec amet convallis suspendisse potenti suspendisse mollis.</p>
             </div>
 
-            <div class="col-md-2"></div>
-            <!-- item -->
-            <div class="col-sm-12 col-md-8 text-center">
-                <div class="panel panel-warning panel-pricing">
-                    <div class="panel-heading">
-                        <div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
-                            <div class="ih-item square effect6 from_top_and_bottom">
-                                <a href="#">
-                                    <div class="img">
-                                        <img src="images/pic01.jpg" alt="">
-                                    </div>
-                                    <div class="mask1"></div>
-                                    <div class="mask2"></div>
-                                    <div class="info">
-                                        <h3>Heading here</h3>
-                                        <p>Description goes here</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!--<img class="img-responsive img-rounded" style="margin-bottom:0px;" src="images/pic01.jpg" alt="image">-->
-                    </div>
-                    <div class="panel-body text-center">
 
-                        <div id="panel-body" class="btn-group" data-toggle="buttons">
-                            <label class="btn btn-primary active" value="1">
-                                <input type="radio" name="options" id="option1" autocomplete="off" checked>Basic
-                            </label>
-                            <label class="btn btn-primary" value="2">
-                                <input type="radio" name="options" id="option2" autocomplete="off">Comprehensive
-                            </label>
-                            <label class="btn btn-primary" value="3">
-                                <input type="radio" name="options" id="option3" autocomplete="off">Advance
-                            </label>
-                        </div>
-                        <!--<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Basic</strong></p>-->
-
-                    </div>
-                    <table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
-                        <thead>
-                        <tr class="odd">
-                            <td class="column1">Products</td>
-                            <td scope="col" abbr="Simple">Qty</td>
-
-                        </tr>
-                        </thead>
-                        <tfoot>
-
-                        </tfoot>
-                        <tbody>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Floors</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Living Rooms</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bedrooms</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bathrooms</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <thead>
-                        <tr class="odd">
-
-                        </tr>
-                        </thead>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Light Switches</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lamps</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doors</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deadbolts</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; People in Home</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TV</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Speaker Sets</th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thermostat</br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                HVAC Units
-                            </th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        <thead>
-                        <tr class="odd">
-
-                        </tr>
-                        </thead>
-                        <tr class="odd">
-                            <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frequently Used </br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                Small Appliances
-                            </th>
-                            <td>
-                                <div class="quantity">
-                                    <div class="quantity-select">
-                                        <div class="entry value-minus">&nbsp;</div>
-                                        <div class="entry value"><span class="span-1">1</span></div>
-                                        <div class="entry value-plus active">&nbsp;</div>
-                                    </div>
-                                </div>
-                            </td>
-
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="panel-body text-center">
-                        <p style="margin:0px; font-size:30px;"><strong id="sum" style="color:#F05F40;">$5199</strong></p>
-
-                    </div>
-                    <div class="panel-footer">
-
-                        <a class="btn btn-lg btn-default call-modal" href="#">
-
-                            I’ll start with the basics
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!--quantity-->
-            <script>
-                $('.value-plus').on('click', function () {
-                    var divUpd = $(this).parent().find('.value'),
-                        newVal = parseInt(divUpd.text(), 10) + 1;
-                    divUpd.text(newVal);
-                });
-
-                $('.value-minus').on('click', function () {
-                    var divUpd = $(this).parent().find('.value'),
-                        newVal = parseInt(divUpd.text(), 10) - 1;
-                    if (newVal >= 1) divUpd.text(newVal);
-                });
-            </script>
-            <!--quantity-->
-            <p class="text-center" style="margin:0px; padding:0px;"><strong>NOTE:</strong> Cras iaculis ultricies nulla.
-                Donec fringilla vitae ligula vitae facilisis. Vivamus consectetur tincidunt lorem a bibendum. Sed
-                fermentum ac ante sit nec amet convallis suspendisse potenti suspendisse mollis.</p>
         </div>
 
+        <div style="margin-bottom:35px;"><a class="btn btn-lg btn-block btn-success page-scroll button special"
+                                            style="width:20%;" href="#">Questionnaire</a></div>
+        <a href="#testimonials" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
+           style="margin:0 auto;">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
 
-    </div>
+    </section>
 
-    <div style="margin-bottom:35px;"><a class="btn btn-lg btn-block btn-success page-scroll button special"
-                                        style="width:20%;" href="#">Questionnaire</a></div>
-    <a href="#testimonials" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated" style="margin:0 auto;">
-        <i class="fa fa-angle-double-down animated"></i>
-    </a>
+    <!-- Testimonials -->
+    <section id="testimonials" class="wrapper style3 special"
+             style="padding-top:55px; background-image: url(images/pattern2.png); background-repeat: repeat-x;">
+        <div class="inner">
+            <header class="major" style="margin-bottom:0px;">
+                <h2>Testimonials</h2>
+                <p style="margin-bottom:10px;">Your satisfaction mean everything to us. See what some of our customers
+                    have
+                    to say.</p>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
 
-</section>
+                        <!-- Bottom Carousel Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#quote-carousel" data-slide-to="1"></li>
+                            <li data-target="#quote-carousel" data-slide-to="2"></li>
+                        </ol>
 
-<!-- Testimonials -->
-<section id="testimonials" class="wrapper style3 special"
-         style="padding-top:55px; background-image: url(images/pattern2.png); background-repeat: repeat-x;">
-    <div class="inner">
-        <header class="major" style="margin-bottom:0px;">
-            <h2>Testimonials</h2>
-            <p style="margin-bottom:10px;">Your satisfaction mean everything to us. See what some of our customers have
-                to say.</p>
-        </header>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                        <!-- Carousel Slides / Quotes -->
+                        <div class="carousel-inner">
 
-                    <!-- Bottom Carousel Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#quote-carousel" data-slide-to="1"></li>
-                        <li data-target="#quote-carousel" data-slide-to="2"></li>
-                    </ol>
-
-                    <!-- Carousel Slides / Quotes -->
-                    <div class="carousel-inner">
-
-                        <!-- Quote 1 -->
-                        <div class="item active">
-                            <div class="row">
-                                <div class="col-sm-12"><img class="img-circle" src="images/pack1.jpg"
-                                                            style="width:150px;height:150px;">
-                                    <p style="color:#fff;">&ldquo;I just told Smart Home Solutions what I do day in and
-                                        day out, sat back and they set everything up. Too easy!&rdquo;</p>
-                                    <small><strong>Michael J.</strong></small>
+                            <!-- Quote 1 -->
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-12"><img class="img-circle" src="images/pack1.jpg"
+                                                                style="width:150px;height:150px;">
+                                        <p style="color:#fff;">&ldquo;I just told Smart Home Solutions what I do day in
+                                            and
+                                            day out, sat back and they set everything up. Too easy!&rdquo;</p>
+                                        <small><strong>Michael J.</strong></small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Quote 2 -->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-12"><img class="img-circle" src="images/house2.jpg"
-                                                            style="width:150px;height:150px;">
-                                    <p style="color:#fff;">&ldquo;I don't remember what I ever did with a "dumb" home.
-                                        Everything is so convenient and seamless now. It's like my home knows exactly
-                                        what I want to happen and does it without me asking. &rdquo;</p>
-                                    <small><strong>Jenn D.</strong></small>
+                            <!-- Quote 2 -->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-12"><img class="img-circle" src="images/house2.jpg"
+                                                                style="width:150px;height:150px;">
+                                        <p style="color:#fff;">&ldquo;I don't remember what I ever did with a "dumb"
+                                            home.
+                                            Everything is so convenient and seamless now. It's like my home knows
+                                            exactly
+                                            what I want to happen and does it without me asking. &rdquo;</p>
+                                        <small><strong>Jenn D.</strong></small>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Quote 3 -->
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-sm-12"><img class="img-circle" src="images/house3.jpg"
-                                                            style="width:150px;height:150px;">
-                                    <p style="color:#fff;">&ldquo;I was worried all this technology be super complicated
-                                        but Smart Home Solutions came and set everything up and now my entire house can
-                                        be controlled from a single app on my phone where ever I am in the
-                                        world. I love it.&rdquo;
-                                    </p>
-                                    <small><strong>Afan T.</strong></small>
+                            <!-- Quote 3 -->
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-12"><img class="img-circle" src="images/house3.jpg"
+                                                                style="width:150px;height:150px;">
+                                        <p style="color:#fff;">&ldquo;I was worried all this technology be super
+                                            complicated
+                                            but Smart Home Solutions came and set everything up and now my entire house
+                                            can
+                                            be controlled from a single app on my phone where ever I am in the
+                                            world. I love it.&rdquo;
+                                        </p>
+                                        <small><strong>Afan T.</strong></small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -957,32 +1016,32 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="promo_box wow bounceInUp" data-wow-offset="50">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-9 col-lg-9">
-                <div class="promo_content">
-                    <h3>Ready to get started?</h3>
-                    <p>Give us a call or drop us a note and we can get you on your way to having the smartest home on
-                        the block. </p>
+    </section>
+    <section class="promo_box wow bounceInUp" data-wow-offset="50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <div class="promo_content">
+                        <h3>Ready to get started?</h3>
+                        <p>Give us a call or drop us a note and we can get you on your way to having the smartest home
+                            on
+                            the block. </p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class="pb_action"><a class="btn btn-lg btn-default call-modal" href="aboutuscontact.html"> <i
-                        class="fa fa-mobile"></i> Contact Us </a>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="pb_action"><a class="btn btn-lg btn-default call-modal" href="aboutuscontact.html"> <i
+                            class="fa fa-mobile"></i> Contact Us </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Footer -->
-<footer id="footer">
-    <ul class="copyright">
-        <li>© 2018 Copyright aismarthome | All Rights Reserved</li>
-    </ul>
-</footer>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="copyright">
+            <li>© 2018 Copyright aismarthome | All Rights Reserved</li>
+        </ul>
+    </footer>
 </div>
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -1056,17 +1115,6 @@
         s.parentNode.insertBefore(ga, s);
     })();
 
-    $("#panel-body label").click(function () {
-        var v = $(this).attr("value");
-        if (v==1){
-            $("#sum").text("$"+5199);
-        }else if(v==2){
-            $("#sum").text("$"+6193);
-        }else if(v==3){
-            $("#sum").text("$"+9036);
-        }
-
-    })
 </script>
 
 
@@ -1089,6 +1137,170 @@
             prevEl: '.swiper-button-prev',
         },
     })
+</script>
+<script>
+    function Count() {
+        this.sum = 0;
+        this.panelBody = 1;
+
+        this.floors = 0;
+        this.living = 0;
+        this.kitchen = 0;
+        this.rooms = 0;
+        this.bathrooms = 0;
+
+        this.light = 0;
+        this.lamps = 0;
+        this.doors = 0;
+        this.deadbolts = 0;
+        this.windows = 0;
+        this.people = 0;
+        this.tv = 0;
+        this.speaker = 0;
+        this.thermostat = 0;
+
+        this.frequently = 0;
+        this.sq = 0;
+    }
+
+    Count.prototype = {
+        getSum: function () {
+            return this.sum;
+        },
+        setPanelBody: function (num) {
+            this.panelBody = num;
+        },
+        doChange: function () {
+            this.floors = parseFloat($("#floors").html());
+            this.living = parseFloat($("#living").html());
+            this.kitchen = parseFloat($("#kitchen").html());
+            this.rooms = parseFloat($("#rooms").html());
+            this.bathrooms = parseFloat($("#bathrooms").html());
+
+            this.light = parseFloat($("#light").html());
+            this.lamps = parseFloat($("#lamps").html());
+            this.doors = parseFloat($("#doors").html());
+            this.deadbolts = parseFloat($("#deadbolts").html());
+            this.windows = parseFloat($("#windows").html());
+            this.people = parseFloat($("#people").html());
+            this.tv = parseFloat($("#tv").html());
+            this.speaker = parseFloat($("#speaker").html());
+            this.thermostat = parseFloat($("#thermostat").html());
+
+            this.frequently = parseFloat($("#frequently").html());
+            this.sq = parseFloat($("#sq").html());
+
+            if (sq > 4000) {
+
+            }
+
+            this.doCount();
+            $('#sum').html("$" + this.sum.toFixed(2));
+            console.log(this);
+        },
+        doCount: function () {
+            if (this.panelBody == 1) {
+                this.sum = (1 * 100
+                    + this.lamps * 45
+                    + this.floors * 130
+                    + this.light * 50
+                    + 1 * 200
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * 40
+                    + this.people * 30
+                    + this.doors * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + (this.tv - 1) * 100
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + this.lamps * 5)
+                        + (0 + this.floors * 20)
+                        + (5 + this.light * 40)
+                        + (0 + 1 * 60)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * 10)
+                        + (0 + this.people * 1)
+                        + (0 + this.doors * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + (this.tv - 1) * 45)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+                    - ((this.floors + this.living + this.rooms + this.bathrooms) * 40
+                        + this.people * 30
+                        + this.doors * 40
+                        + this.floors * 50) * 1.08
+            } else if (this.panelBody == 2) {
+                this.sum = (1 * 100
+                    + this.lamps * 45
+                    + this.floors * 130
+                    + this.light * 50
+                    + 1 * 200
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * 40
+                    + this.people * 30
+                    + this.doors * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + (this.tv - 1) * 100
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + this.lamps * 5)
+                        + (0 + this.floors * 20)
+                        + (5 + this.light * 40)
+                        + (0 + 1 * 60)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * 10)
+                        + (0 + this.people * 1)
+                        + (0 + this.doors * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + (this.tv - 1) * 45)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+            } else if (this.panelBody == 3) {
+                this.sum = (1 * 100
+                    + (this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * 45
+                    + (this.living + this.kitchen + this.rooms) * 130
+                    + this.light * 50
+                    + 1 * 250
+                    + this.deadbolts * 200
+                    + (this.kitchen + this.bathrooms) * 40
+                    + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * 40
+                    + this.people * 30
+                    + (this.doors + this.windows) * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + (this.tv - 1) * 100
+                    + this.tv * 35
+                    + this.speaker * 35
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + (this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * 5)
+                        + (0 + (this.living + this.kitchen + this.rooms) * 20)
+                        + (5 + this.light * 40)
+                        + (0 + this.deadbolts * 60)
+                        + (0 + (this.kitchen + this.bathrooms) * 5)
+                        + (0 + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * 10)
+                        + (0 + (this.people) * 1)
+                        + (0 + (this.doors + this.windows) * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + (this.tv - 1) * 45)
+                        + (0 + this.tv * 10)
+                        + (0 + this.speaker * 10)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+            }
+        }
+    }
+
+    var count = new Count();
+    $('#panel-body > label').click(function () {
+        count.setPanelBody(parseFloat($(this).attr("value")));
+        count.doChange();
+    });
+    $('.entry').click(function () {
+        count.doChange();
+    });
+
 </script>
 </body>
 
