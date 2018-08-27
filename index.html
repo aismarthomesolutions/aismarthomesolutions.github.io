@@ -3,19 +3,22 @@
 
 <head>
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MHJSQ9Q');</script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MHJSQ9Q');
+    </script>
     <!-- End Google Tag Manager -->
 
     <title>Automated Intelligence</title>
@@ -33,6 +36,7 @@
     <link href="css/usecases.css" rel="stylesheet" type="text/css">
     <link href="css/ihover.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="css/shortcodes.css" rel="stylesheet" type="text/css">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
     <!--[if lte IE 9]>
@@ -48,11 +52,21 @@
         .swiper-slide .row > :nth-child(2) {
             left: 1% !important;
         }
+
+        td {
+            vertical-align: middle !important;
+        }
+
+        .panel-body-active {
+            background-color: #1ba39c !important;
+            border-color: #1ba39c !important;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <script src="maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 <body class="landing">
 <!-- Google Tag Manager (noscript) -->
 <noscript>
@@ -67,7 +81,7 @@
         <div id="status">&nbsp;</div>
     </div>
 </div>
-
+　　
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113145872-2"></script>
 <script>
@@ -78,12 +92,13 @@
     }
 
     gtag('js', new Date());
+
     gtag('config', 'UA-113145872-2');
 </script>
 
 
 <!-- Page Wrapper -->
-<div id="page-wrapper">
+<div id="page-wrapper" style="margin-top: -24px">
 
 
     <!-- Header -->
@@ -110,14 +125,14 @@
                                                        height="152px" alt="Webgig"/></div>
         <div class="inner" style="margin:20px 0px 0px 0px;">
             <h2>Automated Intelligence</h2>
-            <p style="font-size:28px;">Your Home of the Future</p>
+            <p style="color: #ffffff;font-size:28px;">Your Home of the Future</p>
         </div>
         <!--<a href="#one" class="more scrolly">Learn More</a>-->
         <a href="#possibilities" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
            style="margin:0 auto;"> <i class="fa fa-angle-double-down animated"></i> </a></section>
 
     <!-- Value Prop -->
-    <section id="possibilities" class="wrapper style1 special"
+    <section id="possibilities" class="wrapper special"
              style="background-image: url(images/pattern.png); background-repeat: repeat-x; padding-top:55px;">
         <div class="inner">
             <header class="major">
@@ -167,7 +182,8 @@
                                                                       aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Voice Control</h5>
                                 <p>No need to walk up to the light switch or the thermostat anymore. Just say what you
-                                    want.</p>
+                                    want.
+                                </p>
                             </div>
                         </li>
                         <li>
@@ -204,11 +220,13 @@
                                     }
                                 }
                             });
+
                         });
                     </script>
                     <script type="text/javascript" src="js/jquery.flexisel.js"></script>
                     </a>
     </section>
+
 
     <!-- Routines -->
     <section id="routines" class="wrapper style3 special"
@@ -447,8 +465,9 @@
         </div>
     </section>
 
+
     <!-- How Does It Work -->
-    <section id="how" class="wrapper style1 special"
+    <section id="how" class="wrapper special"
              style="padding-top:55px; background-image: url(images/pattern.png); background-repeat: repeat-x;">
         <!-- Original: <section id="how" class="wrapper style3 special nice__title" style="background: rgba(0, 0, 0, 0.7); padding:30px;"> -->
         <div class="inner" style="padding-bottom:1px;">
@@ -482,7 +501,8 @@
                                 based on your lifestyle.</P>
                             <p style="color:#fff; font-size:14px;"> And if life changes? We'll make sure your home
                                 adapts
-                                accordingly</p>
+                                accordingly
+                            </p>
 
                         </div>
                     </div>
@@ -492,8 +512,7 @@
                 <h3>That's All.</h3>
 
                 <p style="color:#fff;">
-                    Tell us what you already know. Tell us what you want. <br/>
-                    We'll take care of the rest.
+                    Tell us what you already know. Tell us what you want. <br/> We'll take care of the rest.
                 </p>
 
 
@@ -501,11 +520,432 @@
                     <i class="fa fa-check"> No reading product reviews.</i></p>
 
                 <p style="color:#fff; margin-bottom:0px;">
-                    <i class="fa fa-check"></i> No worrying if everything will work together.</i></p>
+                    <i class="fa fa-check"></i> No worrying if everything will work together.</i>
+                </p>
 
                 <p style="color:#fff; margin-bottom:0px;">
                     All the smartness without any of the headaches.</p>
             </header>
+
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="wrapper style3 special nice__title"
+             style="background: rgba(0, 0, 0, 0.7); padding-bottom:50px;">
+        <div class="inner" style="padding-bottom:20px;">
+            <header class="major">
+                <h2 style="padding-bottom:0px;">Picking Your Package</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br/> fringilla tincidunt.
+                    Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+            </header>
+            <div class="row" style="margin:0px auto;">
+
+
+                <!-- portfolio Modals -->
+                <div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog"
+                     aria-hidden="true">
+                    <div class="modal-content port-modal">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2 text-center">
+                                    <div class="modal-body">
+                                        <div class="col-md-6 to-animate-2">
+                                            <h3>Appointment</h3>
+                                            <div class="form-group ">
+                                                <label for="name" class="sr-only">Name</label>
+                                                <input id="name" class="form-control" placeholder="Name" type="text">
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="email" class="sr-only">Email</label>
+                                                <input id="email" class="form-control" placeholder="Email" type="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="occation" class="sr-only">Occation</label>
+                                                <select class="form-control" id="occation">
+                                                    <option>Select a Package</option>
+                                                    <option>Package One</option>
+                                                    <option>Package Two</option>
+                                                    <option>Package Three</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group ">
+
+                                                <label for="dtp_input1" class="control-label"></label>
+                                                <div class="input-group date form_datetime col-md-12"
+                                                     data-date="1979-09-16T05:25:07Z"
+                                                     data-date-format="dd MM yyyy - HH:ii p"
+                                                     data-link-field="dtp_input1"
+                                                     style="padding:0px;">
+                                                    <input class="form-control" size="16" type="text"
+                                                           value="Date &amp; Time" readonly>
+                                                    <span class="input-group-addon"><span
+                                                            class="glyphicon glyphicon-remove"
+                                                            style="color:#555;"></span></span>
+                                                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"
+                                                                                          style="color:#555;"></span></span>
+                                                </div>
+                                                <input type="hidden" id="dtp_input1" value=""><br/><br/>
+                                            </div>
+
+
+                                            <div class="form-group ">
+                                                <label for="message" class="sr-only">Message</label>
+                                                <textarea name="" id="message" cols="30" rows="5" class="form-control"
+                                                          placeholder="Message"></textarea>
+                                            </div>
+                                            <div class="form-group ">
+                                                <!--<a class="btn btn-lg btn-block btn-danger button special">Booking Appointment</a>-->
+                                                <input class="btn btn-lg btn-block btn-danger button special"
+                                                       value="Booking Appointment" type="submit">
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2"></div>
+                <!-- item -->
+                <div class="col-sm-12 col-md-8 text-center">
+                    <div class="panel panel-warning panel-pricing">
+                        <div class="panel-heading">
+                            <div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
+                                <div class="ih-item square effect6 from_top_and_bottom">
+                                    <a href="#">
+                                        <div class="img">
+                                            <img src="images/pic01.jpg" alt="">
+                                        </div>
+                                        <div class="mask1"></div>
+                                        <div class="mask2"></div>
+                                        <div class="info">
+                                            <h3>Heading here</h3>
+                                            <p>Description goes here</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!--<img class="img-responsive img-rounded" style="margin-bottom:0px;" src="images/pic01.jpg" alt="image">-->
+                        </div>
+                        <div class="panel-body text-center">
+
+                            <div id="panel-body" class="" data-toggle="buttons">
+                                <div class="btn btn-primary panel-body-active col-xs-12 col-sm-4" value="1">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Remote
+                                    Only
+
+                                </div>
+                                <div class="btn btn-primary col-xs-12 col-sm-4" value="2">
+                                    <input type="radio" name="options" id="option2" autocomplete="off">Basic
+
+                                </div>
+                                <div class="btn btn-primary col-xs-12 col-sm-4" value="3">
+                                    <input type="radio" name="options" id="option3" autocomplete="off">Premium
+
+                                </div>
+                            </div>
+                            <!--<p style="margin:0px; font-size:30px;"><strong style="color:#777777;">Basic</strong></p>-->
+
+                        </div>
+                        <table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
+                            <thead>
+                            <tr class="odd">
+                                <td class="column1">Products</td>
+                                <td scope="col" abbr="Simple">Qty</td>
+
+                            </tr>
+                            </thead>
+                            <tfoot>
+
+                            </tfoot>
+                            <tbody>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Floors</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="floors" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Living Rooms / Common
+                                    Areas
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="living" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Kitchen
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="kitchen" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rooms (Bedroom, Office,
+                                    etc.)
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="rooms" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bathrooms
+
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="bathrooms" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <thead>
+                            <tr class="odd">
+
+                            </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Light Switches</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="light" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lamps</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="lamps" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doors</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="doors" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Deadbolts</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="deadbolts" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Windows</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="windows" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; People in Home</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="people" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TV</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="tv" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Speaker Sets</th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="speaker" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thermostat</br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    HVAC Units
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="thermostat" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <thead>
+                            <tr class="odd">
+
+                            </tr>
+                            </thead>
+                            <tr class="odd">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Frequently Used </br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Small Appliances
+                                </th>
+                                <td>
+                                    <div class="quantity">
+                                        <div class="quantity-select">
+                                            <div class="entry value-minus">&nbsp;</div>
+                                            <div id="frequently" class="entry value">1</div>
+                                            <div class="entry value-plus active">&nbsp;</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr class="">
+                                <th scope="row" class="column1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Total Square Feet
+                                <td>
+                                    <div class="quantity">
+                                        <input id="sq"
+                                               class="form-control"
+                                               maxlength="4"
+                                               onkeyup="count.doChange();if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+                                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+                                               placeholder="1 to 9,999"
+                                               style="color:#2a2a2a;text-align:center;">
+                                    </div>
+                                </td>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="panel-body text-center">
+                            <p style="margin:0px; font-size:30px;"><strong id="sum"
+                                                                           style="color:#F05F40;">$0.00</strong></p>
+
+                        </div>
+                        <div class="panel-footer">
+
+                            <a class="btn btn-lg btn-default call-modal" href="#">
+
+                                I’ll start with the basics
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--quantity-->
+                <script>
+                    $('.value-plus').on('click', function () {
+                        var divUpd = $(this).parent().find('.value'),
+                            newVal = parseInt(divUpd.text(), 10) + 1;
+                        divUpd.text(newVal);
+                    });
+
+                    $('.value-minus').on('click', function () {
+                        var divUpd = $(this).parent().find('.value'),
+                            newVal = parseInt(divUpd.text(), 10) - 1;
+                        if (newVal >= 0) divUpd.text(newVal);
+                    });
+                </script>
+                <!--quantity-->
+                <p class="text-center" style="margin:0px; padding:0px;"><strong>NOTE:</strong> Cras iaculis ultricies
+                    nulla.
+                    Donec fringilla vitae ligula vitae facilisis. Vivamus consectetur tincidunt lorem a bibendum. Sed
+                    fermentum ac ante sit nec amet convallis suspendisse potenti suspendisse mollis.</p>
+            </div>
+
+
+        </div>
+
+        <div style="margin-bottom:35px;"><a class="btn btn-lg btn-block btn-success page-scroll button special"
+                                            style="width:20%;" href="#">Questionnaire</a></div>
+        <a href="#testimonials" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
+           style="margin:0 auto;">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
 
     </section>
 
@@ -570,9 +1010,9 @@
                                             complicated
                                             but Smart Home Solutions came and set everything up and now my entire house
                                             can
-                                            be controlled from a single app on my phone where ever I am in the world. I
-                                            love
-                                            it.&rdquo;</p>
+                                            be controlled from a single app on my phone where ever I am in the
+                                            world. I love it.&rdquo;
+                                        </p>
                                         <small><strong>Afan T.</strong></small>
                                     </div>
                                 </div>
@@ -649,16 +1089,18 @@
     $(window).on('load', function () { // makes sure the whole site is loaded
         $('#status').fadeOut(); // will first fade out the loading animation
         $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-        $('body').delay(350).css({'overflow': 'visible'});
+        $('body').delay(350).css({
+            'overflow': 'visible'
+        });
     })
 </script>
 
 <script>
     $(document).ready(function () {
         //carousel options
-        $('#quote-carousel').carousel({
-            pause: true, interval: 10000,
-        });
+        // $('#quote-carousel').carousel({
+        //     pause: true, interval: 10000,
+        // });
     });
 </script>
 
@@ -669,6 +1111,7 @@
     _gaq.push(['_setAccount', 'UA-113145872-2']);
     _gaq.push(['_setDomainName', 'jqueryscript.net']);
     _gaq.push(['_trackPageview']);
+
     (function () {
         var ga = document.createElement('script');
         ga.type = 'text/javascript';
@@ -677,6 +1120,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
+
 </script>
 
 
@@ -699,6 +1143,191 @@
             prevEl: '.swiper-button-prev',
         },
     })
+</script>
+<script>
+    function Count() {
+        this.sum = 0;
+        this.panelBody = 1;
+
+        this.floors = 1;
+        this.living = 1;
+        this.kitchen = 1;
+        this.rooms = 1;
+        this.bathrooms = 1;
+
+        this.light = 1;
+        this.lamps = 1;
+        this.doors = 1;
+        this.deadbolts = 1;
+        this.windows = 1;
+        this.people = 1;
+        this.tv = 1;
+        this.speaker = 1;
+        this.thermostat = 1;
+
+        this.frequently = 1;
+        this.sq = 1;
+        this.sqFlag = 1;
+    }
+
+    Count.prototype = {
+        getSum: function () {
+            return this.sum;
+        },
+        setPanelBody: function (num) {
+            this.panelBody = num;
+        },
+        doChange: function () {
+            this.floors = parseFloat($("#floors").html());
+            this.living = parseFloat($("#living").html());
+            this.kitchen = parseFloat($("#kitchen").html());
+            this.rooms = parseFloat($("#rooms").html());
+            this.bathrooms = parseFloat($("#bathrooms").html());
+
+            this.light = parseFloat($("#light").html());
+            this.lamps = parseFloat($("#lamps").html());
+            this.doors = parseFloat($("#doors").html());
+            this.deadbolts = parseFloat($("#deadbolts").html());
+            this.windows = parseFloat($("#windows").html());
+            this.people = parseFloat($("#people").html());
+            this.tv = parseFloat($("#tv").html());
+            this.speaker = parseFloat($("#speaker").html());
+            this.thermostat = parseFloat($("#thermostat").html());
+
+            this.frequently = parseFloat($("#frequently").html());
+            this.sq = parseFloat($("#sq").val());
+
+            if (this.sq > 4000) {
+                this.sqFlag = 1;
+            } else {
+                this.sqFlag = 0;
+            }
+
+            if (this.floors == 0 && this.living == 0 && this.kitchen == 0 &&
+                this.rooms == 0 && this.bathrooms == 0 && this.light == 0 &&
+                this.lamps == 0 && this.doors == 0 && this.deadbolts == 0 &&
+                this.windows == 0 && this.people == 0 && this.tv == 0
+                && this.speaker == 0 && this.thermostat == 0 && this.frequently == 0) {
+                this.sum = 0;
+            } else {
+                this.doCount();
+            }
+
+            $('#sum').html("$" + Math.round(this.sum));
+            console.log(this);
+        },
+        doCount: function () {
+            if (this.panelBody == 1) {
+                this.sum = (1 * 100
+                    + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 45
+                    + this.floors * 130
+                    + this.light * 50
+                    + 1 * 200
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
+                    + this.people * 30
+                    + this.doors * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + Math.max((this.tv - 1), 0) * 100
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
+                        + (0 + this.floors * 20)
+                        + (5 + this.light * 40)
+                        + (0 + 1 * 60)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
+                        + (0 + this.people * 1)
+                        + (0 + this.doors * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+                    - ((this.floors + this.living + this.rooms + this.bathrooms) * 40
+                        + this.people * 30
+                        + this.doors * 40
+                        + this.floors * 50) * 1.08
+            } else if (this.panelBody == 2) {
+                this.sum = (1 * 100
+                    + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 45
+                    + this.floors * 130
+                    + this.light * 50
+                    + 1 * 200
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
+                    + this.people * 30
+                    + this.doors * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + Math.max((this.tv - 1), 0) * 100
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
+                        + (0 + this.floors * 20)
+                        + (5 + this.light * 40)
+                        + (0 + 1 * 60)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
+                        + (0 + this.people * 1)
+                        + (0 + this.doors * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+            } else if (this.panelBody == 3) {
+                this.sum = (1 * 100
+                    + (this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * 45
+                    + (this.living + this.kitchen + this.rooms) * 130
+                    + this.light * 50
+                    + 1 * 250
+                    + this.deadbolts * 200
+                    + (this.kitchen + this.bathrooms) * 40
+                    + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
+                    + this.people * 30
+                    + (this.doors + this.windows) * 40
+                    + this.floors * 50
+                    + 1 * 350
+                    + Math.max((this.tv - 1), 0) * 100
+                    + this.tv * 35
+                    + this.speaker * 35
+                    + this.thermostat * 250) * 1.09
+                    + ((((110 + 0 * 1)
+                        + (0 + (this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * 5)
+                        + (0 + (this.living + this.kitchen + this.rooms) * 20)
+                        + (5 + this.light * 40)
+                        + (0 + this.deadbolts * 60)
+                        + (0 + (this.kitchen + this.bathrooms) * 5)
+                        + (0 + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
+                        + (0 + (this.people) * 1)
+                        + (0 + (this.doors + this.windows) * 5)
+                        + (0 + this.floors * 10)
+                        + (10 + 1 * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
+                        + (0 + this.tv * 10)
+                        + (0 + this.speaker * 10)
+                        + (0 + this.thermostat * 85)
+                    ) + 130) / 60) * 80
+            }
+        }
+    }
+
+    var count = new Count();
+    $('#panel-body > div').click(function () {
+        $(this).parent().children().removeClass("panel-body-active ");
+        $(this).addClass("panel-body-active ");
+        count.setPanelBody(parseFloat($(this).attr("value")));
+        count.doChange();
+    });
+    $('.entry').click(function () {
+        count.doChange();
+    });
+    $('#sq').focusout(function () {
+        count.doChange();
+    });
+
+    $(document).ready(function () {
+        count.doChange();
+    });
+
 </script>
 </body>
 
