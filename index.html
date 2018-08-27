@@ -640,16 +640,16 @@
 
                             <div id="panel-body" class="" data-toggle="buttons">
                                 <div class="btn btn-primary panel-body-active col-xs-12 col-sm-4" value="1">
-                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>Remote
+                                    <input type="radio" name="options" id="Remote Only" autocomplete="off" checked>Remote
                                     Only
 
                                 </div>
                                 <div class="btn btn-primary col-xs-12 col-sm-4" value="2">
-                                    <input type="radio" name="options" id="option2" autocomplete="off">Basic
+                                    <input type="radio" name="options" id="Basic" autocomplete="off">Basic
 
                                 </div>
                                 <div class="btn btn-primary col-xs-12 col-sm-4" value="3">
-                                    <input type="radio" name="options" id="option3" autocomplete="off">Premium
+                                    <input type="radio" name="options" id="Premium" autocomplete="off">Premium
 
                                 </div>
                             </div>
@@ -908,9 +908,8 @@
                         </div>
                         <div class="panel-footer">
 
-                            <a class="btn btn-lg btn-default call-modal" href="#">
-
-                                I’ll start with the basics
+                            <a id="submit" class="btn btn-lg btn-default call-modal" href="#">
+                                I’ll start with the remote only
                             </a>
                         </div>
                     </div>
@@ -1315,6 +1314,8 @@
         $(this).parent().children().removeClass("panel-body-active ");
         $(this).addClass("panel-body-active ");
         count.setPanelBody(parseFloat($(this).attr("value")));
+        // console.log($(this).children("input").attr("id"));
+        $('#submit').html(" I’ll start with the " + $(this).children("input").attr("id"));
         count.doChange();
     });
     $('.entry').click(function () {
