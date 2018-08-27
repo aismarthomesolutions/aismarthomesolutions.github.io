@@ -1223,7 +1223,7 @@
                     + this.doors * 40
                     + this.floors * 50
                     + 1 * 350
-                    + (this.tv - 1) * 100
+                    + Math.max((this.tv - 1), 0) * 100
                     + this.thermostat * 250) * 1.09
                     + ((((110 + 0 * 1)
                         + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
@@ -1235,7 +1235,7 @@
                         + (0 + this.doors * 5)
                         + (0 + this.floors * 10)
                         + (10 + 1 * 45)
-                        + (0 + (this.tv - 1) * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
                         + (0 + this.thermostat * 85)
                     ) + 130) / 60) * 80
                     - ((this.floors + this.living + this.rooms + this.bathrooms) * 40
@@ -1253,7 +1253,7 @@
                     + this.doors * 40
                     + this.floors * 50
                     + 1 * 350
-                    + (this.tv - 1) * 100
+                    + Math.max((this.tv - 1), 0) * 100
                     + this.thermostat * 250) * 1.09
                     + ((((110 + 0 * 1)
                         + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
@@ -1265,7 +1265,7 @@
                         + (0 + this.doors * 5)
                         + (0 + this.floors * 10)
                         + (10 + 1 * 45)
-                        + (0 + (this.tv - 1) * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
                         + (0 + this.thermostat * 85)
                     ) + 130) / 60) * 80
             } else if (this.panelBody == 3) {
@@ -1281,7 +1281,7 @@
                     + (this.doors + this.windows) * 40
                     + this.floors * 50
                     + 1 * 350
-                    + (this.tv - 1) * 100
+                    + Math.max((this.tv - 1), 0) * 100
                     + this.tv * 35
                     + this.speaker * 35
                     + this.thermostat * 250) * 1.09
@@ -1296,7 +1296,7 @@
                         + (0 + (this.doors + this.windows) * 5)
                         + (0 + this.floors * 10)
                         + (10 + 1 * 45)
-                        + (0 + (this.tv - 1) * 45)
+                        + (0 + Math.max((this.tv - 1), 0) * 45)
                         + (0 + this.tv * 10)
                         + (0 + this.speaker * 10)
                         + (0 + this.thermostat * 85)
