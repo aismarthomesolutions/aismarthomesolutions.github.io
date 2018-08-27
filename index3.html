@@ -885,8 +885,9 @@
                                     <div class="quantity">
                                         <input id="sq"
                                                class="form-control"
-                                               onkeyup="var v=this.value||'';v=v.replace(/\D/gi,'');v=parseInt(v,10);if(v<1){this.value=1;}else if(v>10000){this.value=10000;}"
-                                               onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                                               maxlength="4"
+                                               onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+                                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
                                                placeholder="1 ~ 10,000"
                                                style="text-align:center;">
                                     </div>
@@ -897,7 +898,7 @@
                         </table>
                         <div class="panel-body text-center">
                             <p style="margin:0px; font-size:30px;"><strong id="sum"
-                                                                           style="color:#F05F40;">$???</strong></p>
+                                                                           style="color:#F05F40;">$0.00</strong></p>
 
                         </div>
                         <div class="panel-footer">
@@ -1161,6 +1162,7 @@
 
         this.frequently = 0;
         this.sq = 0;
+        this.sqFlag = 0;
     }
 
     Count.prototype = {
@@ -1188,24 +1190,35 @@
             this.thermostat = parseFloat($("#thermostat").html());
 
             this.frequently = parseFloat($("#frequently").html());
-            this.sq = parseFloat($("#sq").html());
+            this.sq = parseFloat($("#sq").val());
 
-            if (sq > 4000) {
-
+            if (this.sq > 4000) {
+                this.sqFlag = 1;
+            } else {
+                this.sqFlag = 0;
             }
 
-            this.doCount();
+            if (this.floors == 0 && this.living == 0 && this.kitchen == 0 &&
+                this.rooms == 0 && this.bathrooms == 0 && this.light == 0 &&
+                this.lamps == 0 && this.doors == 0 && this.deadbolts == 0 &&
+                this.windows == 0 && this.people == 0 && this.tv == 0
+                && this.speaker == 0 && this.thermostat == 0 && this.frequently == 0) {
+                this.sum = 0;
+            } else {
+                this.doCount();
+            }
+
             $('#sum').html("$" + this.sum.toFixed(2));
             console.log(this);
         },
         doCount: function () {
             if (this.panelBody == 1) {
                 this.sum = (1 * 100
-                    + this.lamps * 45
+                    + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 45
                     + this.floors * 130
                     + this.light * 50
                     + 1 * 200
-                    + (this.floors + this.living + this.rooms + this.bathrooms) * 40
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
                     + this.people * 30
                     + this.doors * 40
                     + this.floors * 50
@@ -1213,11 +1226,11 @@
                     + (this.tv - 1) * 100
                     + this.thermostat * 250) * 1.09
                     + ((((110 + 0 * 1)
-                        + (0 + this.lamps * 5)
+                        + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
                         + (0 + this.floors * 20)
                         + (5 + this.light * 40)
                         + (0 + 1 * 60)
-                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * 10)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
                         + (0 + this.people * 1)
                         + (0 + this.doors * 5)
                         + (0 + this.floors * 10)
@@ -1231,11 +1244,11 @@
                         + this.floors * 50) * 1.08
             } else if (this.panelBody == 2) {
                 this.sum = (1 * 100
-                    + this.lamps * 45
+                    + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 45
                     + this.floors * 130
                     + this.light * 50
                     + 1 * 200
-                    + (this.floors + this.living + this.rooms + this.bathrooms) * 40
+                    + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
                     + this.people * 30
                     + this.doors * 40
                     + this.floors * 50
@@ -1243,11 +1256,11 @@
                     + (this.tv - 1) * 100
                     + this.thermostat * 250) * 1.09
                     + ((((110 + 0 * 1)
-                        + (0 + this.lamps * 5)
+                        + (0 + ((this.lamps * -(this.sqFlag - 1)) + ((this.living + this.kitchen + this.rooms + this.bathrooms + this.lamps + this.frequently) * this.sqFlag)) * 5)
                         + (0 + this.floors * 20)
                         + (5 + this.light * 40)
                         + (0 + 1 * 60)
-                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * 10)
+                        + (0 + (this.floors + this.living + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
                         + (0 + this.people * 1)
                         + (0 + this.doors * 5)
                         + (0 + this.floors * 10)
@@ -1263,7 +1276,7 @@
                     + 1 * 250
                     + this.deadbolts * 200
                     + (this.kitchen + this.bathrooms) * 40
-                    + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * 40
+                    + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 40
                     + this.people * 30
                     + (this.doors + this.windows) * 40
                     + this.floors * 50
@@ -1278,7 +1291,7 @@
                         + (5 + this.light * 40)
                         + (0 + this.deadbolts * 60)
                         + (0 + (this.kitchen + this.bathrooms) * 5)
-                        + (0 + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * 10)
+                        + (0 + (this.floors + this.living + this.kitchen + this.rooms + this.bathrooms) * (1 + this.sqFlag) * 10)
                         + (0 + (this.people) * 1)
                         + (0 + (this.doors + this.windows) * 5)
                         + (0 + this.floors * 10)
@@ -1298,6 +1311,9 @@
         count.doChange();
     });
     $('.entry').click(function () {
+        count.doChange();
+    });
+    $('#sq').focusout(function () {
         count.doChange();
     });
 
