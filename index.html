@@ -1332,7 +1332,7 @@
         $(this).addClass("panel-body-active ");
         count.setPanelBody(parseFloat($(this).attr("value")));
         // console.log($(this).children("input").attr("id"));
-        $('#submit').html(" I’ll start with the " + $(this).children("input").attr("id"));
+   //["next" is sufficient for now]     $('#submit').html(" I’ll start with the " + $(this).children("input").attr("id"));
         count.doChange();
     });
     $('.entry').click(function () {
