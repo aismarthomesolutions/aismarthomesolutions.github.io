@@ -4858,7 +4858,9 @@ html {
     }
 }
 
-
+#banner > .inner > p {
+    color: #ffffff;
+}
 
 
 

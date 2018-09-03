@@ -26,9 +26,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/main.css?v=20180924"/>
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css?v=20180924" rel="stylesheet" type="text/css">
     <link href="css/bookingmodal.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
@@ -71,6 +71,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #ffffff  !important;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
@@ -136,7 +140,7 @@
                                                        height="152px" alt="Webgig"/></div>
         <div class="inner" style="margin:20px 0px 0px 0px;">
             <h2>Automated Intelligence</h2>
-            <p style="color: #ffffff;font-size:28px;">Your Home of the Future</p>
+            <p style="font-size:28px;">Your Home of the Future</p>
         </div>
         <!--<a href="#one" class="more scrolly">Learn More</a>-->
         <a href="#possibilities" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
@@ -153,89 +157,141 @@
             <!-- services -->
             <div class="services">
                 <div class="agileits_services_grids">
-                    <ul id="flexiselDemo1">
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-off"
-                                                                      aria-hidden="true"></span>
+                    <div class="swiper-container-services">
+                        <div class="swiper-wrapper">
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-off"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Lighting</h5>
                                 <p>Want to control all your lights with a single command? Want random lights to turn on
                                     & off when you're away? No more running around the house to turn everything off.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-globe"
-                                                                      aria-hidden="true"></span>
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-globe"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Heating & Cooling</h5>
                                 <p>Adjust the thermostat from anywhere in the world whether you're at work or on
                                     vacation so it's always the perfect temperature when you're home; and saving you
                                     money when you're not.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-home"
-                                                                      aria-hidden="true"></span>
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-home"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Security</h5>
                                 <p>Hate having to look for the keys every time you go out? Don't worry, your door will
                                     unlock as you're pulling into the driveway.</p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-film"
-                                                                      aria-hidden="true"></span>
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-film"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Home Entertainment</h5>
                                 <p>Was it HDMI 2 or 5? Gone are the days of having a separate remote for everything. One
                                     click and your TV and sound system will turn on to the exact channel or movie you
                                     want. </p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-bullhorn"
-                                                                      aria-hidden="true"></span>
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-bullhorn"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Voice Control</h5>
                                 <p>No need to walk up to the light switch or the thermostat anymore. Just say what you
                                     want.
                                 </p>
                             </div>
-                        </li>
-                        <li>
-                            <div class="agileits_services_grid"><span class="glyphicon glyphicon-signal"
-                                                                      aria-hidden="true"></span>
+                            <div class="agileits_services_grid swiper-slide"><span class="glyphicon glyphicon-signal"
+                                                                                   aria-hidden="true"></span>
                                 <h5 style="color:#F05F40;">Sensors</h5>
                                 <p>Sensors: the backbone of automation. Know exactly when you & your family came & went.
                                     Know when something opens or closes. Know when there's people over when there
                                     shouldn't be. </p>
                             </div>
-                        </li>
-                    </ul>
-                    <script type="text/javascript">
-                        $(window).load(function () {
-                            $("#flexiselDemo1").flexisel({
-                                visibleItems: 4,
-                                animationSpeed: 1000,
-                                autoPlay: true,
-                                autoPlaySpeed: 8000,
-                                pauseOnHover: true,
-                                enableResponsiveBreakpoints: true,
-                                responsiveBreakpoints: {
-                                    portrait: {
-                                        changePoint: 480,
-                                        visibleItems: 1
-                                    },
-                                    landscape: {
-                                        changePoint: 640,
-                                        visibleItems: 2
-                                    },
-                                    tablet: {
-                                        changePoint: 768,
-                                        visibleItems: 3
-                                    }
-                                }
-                            });
+                        </div>
+                    </div>
+                </div>
 
-                        });
-                    </script>
-                    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-                    </a>
+            </div>
+            <!--<div class="services">-->
+            <!--<div class="agileits_services_grids">-->
+            <!--<ul id="flexiselDemo1">-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-off"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Lighting</h5>-->
+            <!--<p>Want to control all your lights with a single command? Want random lights to turn on-->
+            <!--& off when you're away? No more running around the house to turn everything off.</p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-globe"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Heating & Cooling</h5>-->
+            <!--<p>Adjust the thermostat from anywhere in the world whether you're at work or on-->
+            <!--vacation so it's always the perfect temperature when you're home; and saving you-->
+            <!--money when you're not.</p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-home"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Security</h5>-->
+            <!--<p>Hate having to look for the keys every time you go out? Don't worry, your door will-->
+            <!--unlock as you're pulling into the driveway.</p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-film"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Home Entertainment</h5>-->
+            <!--<p>Was it HDMI 2 or 5? Gone are the days of having a separate remote for everything. One-->
+            <!--click and your TV and sound system will turn on to the exact channel or movie you-->
+            <!--want. </p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-bullhorn"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Voice Control</h5>-->
+            <!--<p>No need to walk up to the light switch or the thermostat anymore. Just say what you-->
+            <!--want.-->
+            <!--</p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="agileits_services_grid"><span class="glyphicon glyphicon-signal"-->
+            <!--aria-hidden="true"></span>-->
+            <!--<h5 style="color:#F05F40;">Sensors</h5>-->
+            <!--<p>Sensors: the backbone of automation. Know exactly when you & your family came & went.-->
+            <!--Know when something opens or closes. Know when there's people over when there-->
+            <!--shouldn't be. </p>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo1").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 8000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 1
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 2
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 3
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+        </a>
     </section>
 
 
@@ -631,14 +687,16 @@
                             <div class="portfolio-wrapper image port-grid " data-category="2, 1" data-sort="value">
                                 <div class="ih-item square effect6 from_top_and_bottom">
                                     <a href="#">
-                                   <!--comment out image for time being     <div class="img">
+                                        <div class="img">
                                             <img src="images/pic01.jpg" alt="">
-                                        </div> -->
+                                        </div>
                                         <div class="mask1"></div>
                                         <div class="mask2"></div>
                                         <div class="info">
-                                            <h3>Heading here</h3>
-                                            <p>Description goes here</p>
+                                            <h3>Essential</h3>
+                                            <p>Not ready to outfit your entire home? Cover the essentials and see if its right for you.<br>
+                                                You can always upgrade later.<br>
+                                                Most popular option</p>
                                         </div>
                                     </a>
                                 </div>
@@ -648,12 +706,12 @@
                         <div class="panel-body text-center">
 
                             <div id="panel-body" class="" data-toggle="buttons">
-                                <div class="btn btn-primary panel-body-active col-xs-12 col-sm-4" value="1">
+                                <div class="btn btn-primary col-xs-12 col-sm-4" value="1">
                                     <input type="radio" name="options" id="Remote Only" autocomplete="off" checked>Remote
                                     Only
 
                                 </div>
-                                <div class="btn btn-primary col-xs-12 col-sm-4" value="2">
+                                <div class="btn btn-primary panel-body-active col-xs-12 col-sm-4" value="2">
                                     <input type="radio" name="options" id="Basic" autocomplete="off">Basic
 
                                 </div>
@@ -668,8 +726,8 @@
                         <table class="dc_table_s2" summary="Overview of hosting plans" style="width:100%; color: #666;">
                             <thead>
                             <!--<tr class="odd">-->
-                                <!--<td class="column1">Products</td>-->
-                                <!--<td scope="col" abbr="Simple">Qty</td>-->
+                            <!--<td class="column1">Products</td>-->
+                            <!--<td scope="col" abbr="Simple">Qty</td>-->
 
                             <!--</tr>-->
                             </thead>
@@ -949,12 +1007,12 @@
         </div>
 
         <div style="margin-bottom:35px;">
-            
-          <!-- Comment Out  <a class="btn btn-lg btn-block btn-success page-scroll button special"
-                                            style="width:20%;" href="#">Questionnaire</a> 
--->
 
-</div>
+            <!-- Comment Out  <a class="btn btn-lg btn-block btn-success page-scroll button special"
+                                              style="width:20%;" href="#">Questionnaire</a>
+  -->
+
+        </div>
         <a href="#testimonials" class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
            style="margin:0 auto;">
             <i class="fa fa-angle-double-down animated"></i>
@@ -1156,11 +1214,25 @@
             prevEl: '.swiper-button-prev',
         },
     })
+
+    var slidesPerViewNum = 3;
+    var windowWidth = $(window).width();
+    if(windowWidth<640) {
+        slidesPerViewNum = 1;
+    }
+
+    var mySwiperServices = new Swiper('.swiper-container-services', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        slidesPerView : slidesPerViewNum,
+        centeredSlides : true,
+    })
 </script>
 <script>
     function Count() {
         this.sum = 0;
-        this.panelBody = 1;
+        this.panelBody = 2;
 
         this.floors = 1;
         this.living = 1;
@@ -1325,12 +1397,27 @@
 
     var count = new Count();
     $('#panel-body > div').click(function () {
+        var panelBodyValue = parseFloat($(this).attr("value"));
         $(this).parent().children().removeClass("panel-body-active ");
         $(this).addClass("panel-body-active ");
-        count.setPanelBody(parseFloat($(this).attr("value")));
-        // console.log($(this).children("input").attr("id"));
+        count.setPanelBody(panelBodyValue);
         $('#submit').html(" I’ll start with the " + $(this).children("input").attr("id"));
         count.doChange();
+        if(panelBodyValue==1){
+            $(".info > h3").html("Remote Only");
+            $(".info > p").html("No need for automation? This is the option for you. Control your home with your voice or smartphone from anywhere in the world*.\n" +
+                " \n" +
+                "*requires internet access");
+        }else if(panelBodyValue==2){
+            $(".info > h3").html("Essential");
+            $(".info > p").html("Not ready to outfit your entire home? Cover the essentials and see if its right for you.\n" +
+                "You can always upgrade later.\n" +
+                "Most popular option");
+        }else if(panelBodyValue==3){
+            $(".info > h3").html("Premium");
+            $(".info > p").html("Nothing is missed, if we offer it, your home has it. Automate even your small appliances (remember that iron you're always forgetting to turn off?)\n" +
+                "Oh, and synchronize all your speakers so you can enjoy your favorite tunes in every room.");
+        }
     });
     $('.entry').click(function () {
         count.doChange();
