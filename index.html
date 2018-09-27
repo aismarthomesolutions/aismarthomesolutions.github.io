@@ -550,9 +550,8 @@
 
                             <p style="color:#fff; margin-bottom:0px;"><strong>TELL US ABOUT YOUR HOME</strong></p>
 
-                            <p style="color:#fff;">We don't believe in one-size-fits-all so unfortunately there's no
-                                generic
-                                package you can purchase right away.</p>
+                            <p style="color:#fff;">Unlike our competitors who sell the same generic packages to everyone, we believe the home is personal.</br>
+			    Do you live in a two-story condo with family or a single-story house by yourself? Which rooms have TV's? Do you rent or own? These are some of the questions we'll be asking to make sure your smart home is designed just for you.</p>
                             <p style="color:#fff; font-size:14px;">(Those two light bulbs and three sensors might work
                                 for a
                                 studio apartment but probably won't be enough for a 3,000 sq. ft home.)</p>
@@ -603,6 +602,14 @@
         <div class="inner" style="padding-bottom:20px;">
             <header class="major">
                 <h2 style="padding-bottom:0px;">The Options</h2>
+                                <p style="color:#fff; font-size:15px; margin-bottom:0px;"><strong>
+                    What are my options and how much does it cost? </strong></p>
+                 <p>
+                    We offer three options, all of which are custom designed to your home. </br>
+                    The estimator below will calculate the cost based on everything in your home - this would be your total cost, no additional fees or last minute surprises.</p>
+                <p style="color:#fff; font-size:14px;margin-top:0px;">
+    (Assuming no additional features are requested, this is what our customers pay 99% of the time.)
+                
             </header>
             <div class="row" style="margin:0px auto;">
 
@@ -979,8 +986,8 @@
                         <div class="panel-footer">
 
 
-                            <a id="submit" class="btn btn-lg btn-default call-modal" href="#">
-                                I’ll start with the remote only
+                            <a id="submit" class="btn btn-lg btn-default call-modal" href="/aboutuscontact">
+                                NEXT
                             </a>
                         </div>
                     </div>
@@ -1001,9 +1008,8 @@
                     });
                 </script>
                 <!--quantity-->
-                <div class="col-sx-12 col-sm-12 col-md-12 text-center">
-                    <p style="margin:0px;padding:0px;"><strong>NOTE:</strong> This is only an estimate, the cost will be
-                        finalized during the consultation.</p>
+                 <div class="col-sx-12 col-sm-12 col-md-12 text-center">
+
                 </div>
                 <!-- Accordians -->
                 <div class="col-md-2"></div>
@@ -1033,8 +1039,10 @@
                                     <li>Your Front Door</li>
                                 </ul>
                                 <p style="color: red;margin: 10px auto;font-size: 22px;">$970</p>
-                                <button style="color: white;background-color: #333333;line-height: initial;min-width: 65%;height: 44px;border-radius: 8px;font-size: 12px;font-weight: 300;">
-                                    YES, LET'S SET UP A TIME
+                                <button style="color: white;background-color: #333333;line-height: initial;width: 65%;height: 44px;border-radius: 8px;font-size: 12px;font-weight: 300;">
+	 <a href="mailto:info@aismarthomesolutions.com?subject=Sampler Package: Appointment&body=Since the sampler package will take approximately 5-8 hours to install and configure, my best day would be ...">
+	                                        YES, LET'S SET UP A TIME
+                                    </a>
                                 </button>
                                 <!--<form action="your-server-side-code" method="POST">-->
                                 <!--<script-->
@@ -1062,11 +1070,7 @@
       -->
 
             </div>
-            <a href="#testimonials"
-               class="btn btn-circle page-scroll fh5co-lead to-animate fadeIn animated"
-               style="margin:0 auto;">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
+            
         </div>
     </section>
 
@@ -1451,7 +1455,7 @@
         $(this).parent().children().removeClass("panel-body-active ");
         $(this).addClass("panel-body-active ");
         count.setPanelBody(panelBodyValue);
-        $('#submit').html(" I’ll start with the " + $(this).children("input").attr("id"));
+        $('#submit').html("NEXT");
         count.doChange();
         if (panelBodyValue == 1) {
             $(".info > h3").html("Remote Only");
