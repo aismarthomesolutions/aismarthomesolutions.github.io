@@ -3593,7 +3593,7 @@ button:disabled,
     color: #555;
 }
 
-.btn-group .active{
+.btn-group .active {
     background-color: #1ba39c;
     border-color: #1ba39c;
 }
@@ -4867,4 +4867,14 @@ html {
     padding-right: 5px;
 }
 
+.nothing {
+    background: rgb(216, 216, 216) !important;
+}
 
+.only-one {
+    background: rgb(242, 242, 242) !important;
+}
+
+.no-events {
+    pointer-events: none;
+}

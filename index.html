@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css?v=20180927"/>
+    <link rel="stylesheet" href="assets/css/main.css?v=20181003"/>
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css?v=20180924" rel="stylesheet" type="text/css">
     <link href="css/bookingmodal.css" rel="stylesheet" type="text/css">
@@ -550,8 +550,11 @@
 
                             <p style="color:#fff; margin-bottom:0px;"><strong>TELL US ABOUT YOUR HOME</strong></p>
 
-                            <p style="color:#fff;">Unlike our competitors who sell the same generic packages to everyone, we believe the home is personal.</br>
-			    Do you live in a two-story condo with family or a single-story house by yourself? Which rooms have TV's? Do you rent or own? These are some of the questions we'll be asking to make sure your smart home is designed just for you.</p>
+                            <p style="color:#fff;">Unlike our competitors who sell the same generic packages to
+                                everyone, we believe the home is personal.</br>
+                                Do you live in a two-story condo with family or a single-story house by yourself? Which
+                                rooms have TV's? Do you rent or own? These are some of the questions we'll be asking to
+                                make sure your smart home is designed just for you.</p>
                             <p style="color:#fff; font-size:14px;">(Those two light bulbs and three sensors might work
                                 for a
                                 studio apartment but probably won't be enough for a 3,000 sq. ft home.)</p>
@@ -602,14 +605,15 @@
         <div class="inner" style="padding-bottom:20px;">
             <header class="major">
                 <h2 style="padding-bottom:0px;">The Options</h2>
-                                <p style="color:#fff; font-size:15px; margin-bottom:0px;"><strong>
+                <p style="color:#fff; font-size:15px; margin-bottom:0px;"><strong>
                     What are my options and how much does it cost? </strong></p>
-                 <p>
+                <p>
                     We offer three options, all of which are custom designed to your home. </br>
-                    The estimator below will calculate the cost based on everything in your home - this would be your total cost, no additional fees or last minute surprises.</p>
+                    The estimator below will calculate the cost based on everything in your home - this would be your
+                    total cost, no additional fees or last minute surprises.</p>
                 <p style="color:#fff; font-size:14px;margin-top:0px;">
-    (Assuming no additional features are requested, this is what our customers pay 99% of the time.)
-                
+                    (Assuming no additional features are requested, this is what our customers pay 99% of the time.)
+
             </header>
             <div class="row" style="margin:0px auto;">
 
@@ -994,21 +998,7 @@
                 </div>
 
                 <!--quantity-->
-                <script>
-                    $('.value-plus').on('click', function () {
-                        var divUpd = $(this).parent().find('.value'),
-                            newVal = parseInt(divUpd.text(), 10) + 1;
-                        divUpd.text(newVal);
-                    });
-
-                    $('.value-minus').on('click', function () {
-                        var divUpd = $(this).parent().find('.value'),
-                            newVal = parseInt(divUpd.text(), 10) - 1;
-                        if (newVal >= 0) divUpd.text(newVal);
-                    });
-                </script>
-                <!--quantity-->
-                 <div class="col-sx-12 col-sm-12 col-md-12 text-center">
+                <div class="col-sx-12 col-sm-12 col-md-12 text-center">
 
                 </div>
                 <!-- Accordians -->
@@ -1040,8 +1030,8 @@
                                 </ul>
                                 <p style="color: red;margin: 10px auto;font-size: 22px;">$970</p>
                                 <button style="color: white;background-color: #333333;line-height: initial;width: 65%;height: 44px;border-radius: 8px;font-size: 12px;font-weight: 300;">
-	 <a href="mailto:info@aismarthomesolutions.com?subject=Sampler Package: Appointment&body=Since the sampler package will take approximately 5-8 hours to install and configure, my best day would be ...">
-	                                        YES, LET'S SET UP A TIME
+                                    <a href="mailto:info@aismarthomesolutions.com?subject=Sampler Package: Appointment&body=Since the sampler package will take approximately 5-8 hours to install and configure, my best day would be ...">
+                                        YES, LET'S SET UP A TIME
                                     </a>
                                 </button>
                                 <!--<form action="your-server-side-code" method="POST">-->
@@ -1070,7 +1060,7 @@
       -->
 
             </div>
-            
+
         </div>
     </section>
 
@@ -1222,10 +1212,7 @@
 
 <script>
     $(document).ready(function () {
-        //carousel options
-        // $('#quote-carousel').carousel({
-        //     pause: true, interval: 10000,
-        // });
+        $(".btn-primary[value='2']").click();
     });
 </script>
 
@@ -1284,6 +1271,12 @@
     })
 </script>
 <script>
+    $('.quantity').parent().append('<div class="quantity-grey" style="display: none;">\n' +
+        '<div class="quantity-select">\n' +
+        '<div class="entry">—</div>\n' +
+        '</div>\n' +
+        '</div>');
+
     function Count() {
         this.sum = 0;
         this.panelBody = 2;
@@ -1315,6 +1308,16 @@
         },
         setPanelBody: function (num) {
             this.panelBody = num;
+        },
+        doPlus: function (obj) {
+            var divUpd = $(obj).parent().find('.value'),
+                newVal = parseInt(divUpd.text(), 10) + 1;
+            divUpd.text(newVal);
+        },
+        doMinus: function (obj) {
+            var divUpd = $(obj).parent().find('.value'),
+                newVal = parseInt(divUpd.text(), 10) - 1;
+            if (newVal >= 0) divUpd.text(newVal);
         },
         doChange: function () {
             this.floors = parseFloat($("#floors").html());
@@ -1353,7 +1356,6 @@
             }
 
             $('#sum').html("$" + Math.round(this.sum));
-            console.log(this);
         },
         doCount: function () {
             if (this.panelBody == 1) {
@@ -1452,17 +1454,33 @@
     var count = new Count();
     $('#panel-body > div').click(function () {
         var panelBodyValue = parseFloat($(this).attr("value"));
+        $(".quantity-select > .value").html("1");
         $(this).parent().children().removeClass("panel-body-active ");
         $(this).addClass("panel-body-active ");
         count.setPanelBody(panelBodyValue);
         $('#submit').html("NEXT");
-        count.doChange();
+        $(".dc_table_s2 th, td ").removeClass("nothing");
+        $(".quantity-select").children().removeClass("no-events");
+        $(".quantity-grey").hide();
+        $(".quantity").show();
         if (panelBodyValue == 1) {
+            $("#kitchen, #windows, #people, #speaker, #frequently").parents("tr").children("th, td").addClass("nothing");
+            $("#kitchen, #windows, #people, #speaker, #frequently").parents(".quantity").hide();
+            $("#kitchen, #windows, #people, #speaker, #frequently").parents("td").children(".quantity-grey").show();
+            $("#kitchen, #windows, #people, #speaker, #frequently").html("0");
+            $("#deadbolts, #tv").parents("tr").children("th, td").addClass("nothing");
+            $("#deadbolts, #tv").siblings().addClass("no-events");
             $(".info > h3").html("Remote Only");
             $(".info > p").html("No need for automation? This is the option for you. Control your home with your voice or smartphone from anywhere in the world*.\n" +
                 " \n" +
                 "*requires internet access");
         } else if (panelBodyValue == 2) {
+            $("#windows, #speaker, #frequently").parents("tr").children("th, td").addClass("nothing");
+            $("#windows, #speaker, #frequently").parents(".quantity").hide();
+            $("#windows, #speaker, #frequently").parents("td").children(".quantity-grey").show();
+            $("#windows, #speaker, #frequently").html("0");
+            $("#deadbolts, #tv").parents("tr").children("th, td").addClass("nothing");
+            $("#deadbolts, #tv").siblings().addClass("no-events");
             $(".info > h3").html("Essential");
             $(".info > p").html("Not ready to outfit your entire home? Cover the essentials and see if its right for you.\n" +
                 "You can always upgrade later.\n" +
@@ -1472,6 +1490,7 @@
             $(".info > p").html("Nothing is missed, if we offer it, your home has it. Automate even your small appliances (remember that iron you're always forgetting to turn off?)\n" +
                 "Oh, and synchronize all your speakers so you can enjoy your favorite tunes in every room.");
         }
+        count.doChange();
     });
     $('.entry').click(function () {
         count.doChange();
@@ -1479,7 +1498,12 @@
     $('#sq').focusout(function () {
         count.doChange();
     });
-
+    $('.value-plus').on('click', function () {
+        count.doPlus(this);
+    });
+    $('.value-minus').on('click', function () {
+        count.doMinus(this);
+    });
 
     $(document).ready(function () {
         count.doChange();
