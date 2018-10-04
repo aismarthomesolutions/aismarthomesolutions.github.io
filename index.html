@@ -1313,11 +1313,13 @@
             var divUpd = $(obj).parent().find('.value'),
                 newVal = parseInt(divUpd.text(), 10) + 1;
             divUpd.text(newVal);
+            this.doChange();
         },
         doMinus: function (obj) {
             var divUpd = $(obj).parent().find('.value'),
                 newVal = parseInt(divUpd.text(), 10) - 1;
             if (newVal >= 0) divUpd.text(newVal);
+            this.doChange();
         },
         doChange: function () {
             this.floors = parseFloat($("#floors").html());
@@ -1468,8 +1470,8 @@
             $("#kitchen, #windows, #people, #speaker, #frequently").parents(".quantity").hide();
             $("#kitchen, #windows, #people, #speaker, #frequently").parents("td").children(".quantity-grey").show();
             $("#kitchen, #windows, #people, #speaker, #frequently").html("0");
-            $("#deadbolts, #tv").parents("tr").children("th, td").addClass("nothing");
-            $("#deadbolts, #tv").siblings().addClass("no-events");
+            $("#deadbolts").parents("tr").children("th, td").addClass("nothing");
+            $("#deadbolts").siblings().addClass("no-events");
             $(".info > h3").html("Remote Only");
             $(".info > p").html("No need for automation? This is the option for you. Control your home with your voice or smartphone from anywhere in the world*.\n" +
                 " \n" +
@@ -1479,8 +1481,8 @@
             $("#windows, #speaker, #frequently").parents(".quantity").hide();
             $("#windows, #speaker, #frequently").parents("td").children(".quantity-grey").show();
             $("#windows, #speaker, #frequently").html("0");
-            $("#deadbolts, #tv").parents("tr").children("th, td").addClass("nothing");
-            $("#deadbolts, #tv").siblings().addClass("no-events");
+            $("#deadbolts").parents("tr").children("th, td").addClass("nothing");
+            $("#deadbolts").siblings().addClass("no-events");
             $(".info > h3").html("Essential");
             $(".info > p").html("Not ready to outfit your entire home? Cover the essentials and see if its right for you.\n" +
                 "You can always upgrade later.\n" +
@@ -1490,6 +1492,7 @@
             $(".info > p").html("Nothing is missed, if we offer it, your home has it. Automate even your small appliances (remember that iron you're always forgetting to turn off?)\n" +
                 "Oh, and synchronize all your speakers so you can enjoy your favorite tunes in every room.");
         }
+        console.log(count);
         count.doChange();
     });
     $('.entry').click(function () {
