@@ -722,15 +722,17 @@
                                         </div>
                                         <!--<div class="mask1"></div>-->
                                         <!--<div class="mask2"></div>-->
-                                        <div class="info" style="position: absolute;height:100%;top:0px;background: rgba(0,0,0,0.6);display: flex;">
-                                           <div style="align-self: center;">
-                                               <h3 style="background-color: #111111">Essential</h3>
-                                               <p style="color: rgb(187,187,187);padding: 0px 10px;font-size: small;">Not ready to outfit your entire home? Cover the
-                                                   essentials and see if its
-                                                   right for you.<br>
-                                                   You can always upgrade later.<br>
-                                                   Most popular option</p>
-                                           </div>
+                                        <div class="info"
+                                             style="position: absolute;height:100%;width:100%;top:0px;background: rgba(0,0,0,0.6);display: flex;">
+                                            <div style="align-self: center;">
+                                                <h3 style="background-color: #111111">Essential</h3>
+                                                <p style="color: rgb(187,187,187);padding: 0px 10px;font-size: small;">
+                                                    Not ready to outfit your entire home? Cover the
+                                                    essentials and see if its
+                                                    right for you.<br>
+                                                    You can always upgrade later.<br>
+                                                    Most popular option</p>
+                                            </div>
 
                                         </div>
                                     </a>
@@ -1486,6 +1488,7 @@
         $(".quantity-select").children().removeClass("no-events");
         $(".quantity-grey").hide();
         $(".quantity").show();
+        $(".info div").hide();
         if (panelBodyValue == 1) {
             $("#kitchen, #windows, #people, #speaker, #frequently").parents("tr").children("th, td").addClass("nothing");
             $("#kitchen, #windows, #people, #speaker, #frequently").parents(".quantity").hide();
@@ -1515,6 +1518,8 @@
         }
         console.log(count);
         count.doChange();
+        // $(".info div").animate({visibility:'visible'});
+        $(".info div").show(750);
     });
     $('.entry').click(function () {
         count.doChange();
