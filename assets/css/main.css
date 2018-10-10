@@ -4878,3 +4878,7 @@ html {
 .no-events {
     pointer-events: none;
 }
+
+.mobile {
+    overflow-y: hidden;
+}

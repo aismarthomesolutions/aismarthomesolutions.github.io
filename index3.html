@@ -27,7 +27,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="assets/css/main.css?v=20181003"/>
+    <link rel="stylesheet" href="assets/css/main.css?v=20181010"/>
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css?v=20180924" rel="stylesheet" type="text/css">
     <link href="css/bookingmodal.css" rel="stylesheet" type="text/css">
@@ -715,26 +715,27 @@
                                     </a>
                                 </div>
                                 <!--mobile-->
-                                <div class="visible-xs-* hidden-sm hidden-md hidden-lg">
+                                <div class="visible-xs-* hidden-sm hidden-md hidden-lg mobile">
                                     <a href="">
-                                        <div class="img">
+                                        <div class="img" style="position: relative;">
                                             <img src="images/pic01.jpg" style="width: 100%;" alt="">
+                                            <div class="info"
+                                                 style="position: absolute;height:100%;width:100%;top:100%;background: rgba(0,0,0,0.6);display: flex;">
+                                                <div style="align-self: center;position: absolute;top: 100%;">
+                                                    <h3 style="background-color: #111111">Essential</h3>
+                                                    <p style="color: rgb(187,187,187);padding: 0px 10px;font-size: small;">
+                                                        Not ready to outfit your entire home? Cover the
+                                                        essentials and see if its
+                                                        right for you.<br>
+                                                        You can always upgrade later.<br>
+                                                        Most popular option</p>
+                                                </div>
+
+                                            </div>
                                         </div>
                                         <!--<div class="mask1"></div>-->
                                         <!--<div class="mask2"></div>-->
-                                        <div class="info"
-                                             style="position: absolute;height:100%;width:100%;top:0px;background: rgba(0,0,0,0.6);display: flex;">
-                                            <div style="align-self: center;">
-                                                <h3 style="background-color: #111111">Essential</h3>
-                                                <p style="color: rgb(187,187,187);padding: 0px 10px;font-size: small;">
-                                                    Not ready to outfit your entire home? Cover the
-                                                    essentials and see if its
-                                                    right for you.<br>
-                                                    You can always upgrade later.<br>
-                                                    Most popular option</p>
-                                            </div>
 
-                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -1488,7 +1489,8 @@
         $(".quantity-select").children().removeClass("no-events");
         $(".quantity-grey").hide();
         $(".quantity").show();
-        $(".info div").hide();
+        $(".mobile .info").css("top","100%");
+        $(".mobile .info div").css("top","100%");
         if (panelBodyValue == 1) {
             $("#kitchen, #windows, #people, #speaker, #frequently").parents("tr").children("th, td").addClass("nothing");
             $("#kitchen, #windows, #people, #speaker, #frequently").parents(".quantity").hide();
@@ -1518,8 +1520,15 @@
         }
         console.log(count);
         count.doChange();
-        // $(".info div").animate({visibility:'visible'});
-        $(".info div").show(750);
+        if ($(window).width()<768){
+            $(".mobile .info").animate({top:"0%"},500);
+            if(panelBodyValue == 3){
+                $(".mobile .info div").animate({top:"15%"},1000);
+            }else{
+                $(".mobile .info div").animate({top:"20%"},1000);
+            }
+
+        }
     });
     $('.entry').click(function () {
         count.doChange();
